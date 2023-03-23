@@ -4,7 +4,7 @@
             <img src="{{ asset('/images/footer-logo.svg') }}" alt="The Movie Database (TMDB)"
                 class="absolute top-0 right-0" width="130" height="94">
 
-            <a class="bg-white font-bold px-4 py-3 rounded text-[#01b4e4] text-lg relative top-[134px]"
+            <a class="bg-white font-bold px-4 py-2.5 relative rounded-md text-[#01b4e4] text-lg top-[134px]"
                 href="/signup">Join the
                 Community</a>
         </div>

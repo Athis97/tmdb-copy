@@ -9,10 +9,45 @@
                             <h2>Popular Movies</h2>
                         </div>
 
-                        <div class="content">
-                            <div class="">
+                        <div class="content flex">
+                            <div class="w-1/5">
 
-                                <div class="filter_panel card">
+                                <x-filter-panel>
+                                    <x-slot name="name">Sort</x-slot>
+                                    <div class="filter">
+                                        <h3>Sort Results By</h3>
+                                        <span title=""
+                                            class="k-widget k-dropdown kendo_dropdown full_width font_size_1"
+                                            unselectable="on" role="listbox" aria-haspopup="listbox"
+                                            aria-expanded="false" tabindex="0" aria-owns="sort_by_listbox"
+                                            aria-live="polite" aria-disabled="false" aria-readonly="false"
+                                            aria-busy="false" style=""
+                                            aria-activedescendant="o481c48d-7711-4fd4-987b-c69bdd314b0d"><span
+                                                unselectable="on" class="k-dropdown-wrap k-state-default"><span
+                                                    id="o481c48d-7711-4fd4-987b-c69bdd314b0d" unselectable="on"
+                                                    role="option" aria-selected="true" class="k-input">Popularity
+                                                    Descending</span><span unselectable="on" class="k-select"
+                                                    aria-label="select"><span
+                                                        class="k-icon k-i-arrow-60-down"></span></span></span><select
+                                                id="sort_by" name="sort_by"
+                                                class="kendo_dropdown full_width font_size_1" data-role="dropdownlist"
+                                                style="display: none;">
+                                                <option value="popularity.desc" selected="selected">Popularity
+                                                    Descending</option>
+                                                <option value="popularity.asc">Popularity Ascending</option>
+                                                <option value="vote_average.desc">Rating Descending</option>
+                                                <option value="vote_average.asc">Rating Ascending</option>
+                                                <option value="primary_release_date.desc">Release Date
+                                                    Descending</option>
+                                                <option value="primary_release_date.asc">Release Date Ascending
+                                                </option>
+                                                <option value="title.asc">Title (A-Z)</option>
+                                                <option value="title.desc">Title (Z-A)</option>
+                                            </select></span>
+                                    </div>
+                                </x-filter-panel>
+
+                                {{-- <div class="filter_panel card">
                                     <div class="name">
                                         <h2>Sort</h2>
                                         <span class="glyphicons_v2 chevron-right"></span>
@@ -49,7 +84,7 @@
                                                 <option value="title.desc">Title (Z-A)</option>
                                             </select></span>
                                     </div>
-                                </div>
+                                </div> --}}
 
                                 <div class="filter_panel card closed">
                                     <div class="name" data-callback="filterCallback()">
@@ -1058,7 +1093,7 @@
                                 </div>
                             </div>
 
-                            <div>
+                            <div class="w-4/5">
                                 <div class="white_column no_pad">
                                     <section id="media_results" class="panel results">
 

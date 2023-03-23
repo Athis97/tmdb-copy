@@ -14,14 +14,16 @@ use App\Http\Controllers\MovieController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', '/movie');
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/movie', [MovieController::class, 'index']);
+Route::get('/movie', [MovieController::class, 'index'])->name('popular-movie');
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
