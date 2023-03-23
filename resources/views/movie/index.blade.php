@@ -5,16 +5,16 @@
             <div id="media_v4" class="media discover">
                 <div class="column_wrapper">
                     <div class="content_wrapper px-[40px] py-[30px]">
-                        <div class="title">
-                            <h2>Popular Movies</h2>
+                        <div class="title mb-4">
+                            <h2 class="font-semibold text-[1.4em]">Popular Movies</h2>
                         </div>
 
                         <div class="content flex">
-                            <div class="w-1/5">
+                            <div class="w-1/5 mr-2">
 
                                 <x-filter-panel>
                                     <x-slot name="name">Sort</x-slot>
-                                    <div class="filter">
+                                    <div class="filter hidden">
                                         <h3>Sort Results By</h3>
                                         <span title=""
                                             class="k-widget k-dropdown kendo_dropdown full_width font_size_1"
@@ -47,52 +47,10 @@
                                     </div>
                                 </x-filter-panel>
 
-                                {{-- <div class="filter_panel card">
-                                    <div class="name">
-                                        <h2>Sort</h2>
-                                        <span class="glyphicons_v2 chevron-right"></span>
-                                    </div>
+                                <x-filter-panel>
+                                    <x-slot name="name">Filters</x-slot>
 
-                                    <div class="filter">
-                                        <h3>Sort Results By</h3>
-                                        <span title=""
-                                            class="k-widget k-dropdown kendo_dropdown full_width font_size_1"
-                                            unselectable="on" role="listbox" aria-haspopup="listbox"
-                                            aria-expanded="false" tabindex="0" aria-owns="sort_by_listbox"
-                                            aria-live="polite" aria-disabled="false" aria-readonly="false"
-                                            aria-busy="false" style=""
-                                            aria-activedescendant="o481c48d-7711-4fd4-987b-c69bdd314b0d"><span
-                                                unselectable="on" class="k-dropdown-wrap k-state-default"><span
-                                                    id="o481c48d-7711-4fd4-987b-c69bdd314b0d" unselectable="on"
-                                                    role="option" aria-selected="true" class="k-input">Popularity
-                                                    Descending</span><span unselectable="on" class="k-select"
-                                                    aria-label="select"><span
-                                                        class="k-icon k-i-arrow-60-down"></span></span></span><select
-                                                id="sort_by" name="sort_by"
-                                                class="kendo_dropdown full_width font_size_1" data-role="dropdownlist"
-                                                style="display: none;">
-                                                <option value="popularity.desc" selected="selected">Popularity
-                                                    Descending</option>
-                                                <option value="popularity.asc">Popularity Ascending</option>
-                                                <option value="vote_average.desc">Rating Descending</option>
-                                                <option value="vote_average.asc">Rating Ascending</option>
-                                                <option value="primary_release_date.desc">Release Date
-                                                    Descending</option>
-                                                <option value="primary_release_date.asc">Release Date Ascending
-                                                </option>
-                                                <option value="title.asc">Title (A-Z)</option>
-                                                <option value="title.desc">Title (Z-A)</option>
-                                            </select></span>
-                                    </div>
-                                </div> --}}
-
-                                <div class="filter_panel card closed">
-                                    <div class="name" data-callback="filterCallback()">
-                                        <h2>Filters</h2>
-                                        <span class="glyphicons_v2 chevron-right"></span>
-                                    </div>
-
-                                    <div class="filter">
+                                    <div class="filter hidden">
                                         <h3>Show Me<span class="tooltip glyphicons_v2 circle-question"
                                                 data-tooltip-id="#show_me_tooltip" data-role="tooltip"></span>
                                         </h3>
@@ -118,7 +76,7 @@
                                         </label>
                                     </div>
 
-                                    <div class="filter">
+                                    <div class="filter hidden">
                                         <h3>Availabilities</h3>
 
                                         <label class="k-form-field">
@@ -167,7 +125,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="filter">
+                                    <div class="filter hidden">
                                         <h3>Release Dates</h3>
 
                                         <label class="k-form-field">
@@ -270,7 +228,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="filter">
+                                    <div class="filter hidden">
                                         <h3>Genres</h3>
                                         <ul id="with_genres" class="multi_select text" name="with_genres[]">
                                             <li data-value="28"><a class="no_click"
@@ -315,7 +273,7 @@
                                         </ul>
                                     </div>
 
-                                    <div class="filter">
+                                    <div class="filter hidden">
                                         <h3>Certification</h3>
                                         <ul id="certification" class="multi_select text" name="certification[]">
                                             <li data-value="U"><a class="no_click"
@@ -328,7 +286,7 @@
                                     </div>
 
 
-                                    <div class="filter">
+                                    <div class="filter hidden">
                                         <h3>Language <span class="tooltip glyphicons_v2 circle-question"
                                                 data-tooltip-id="#language_tooltip" data-role="tooltip"></span>
                                         </h3>
@@ -528,7 +486,7 @@
                                             </select></span>
                                     </div>
 
-                                    <div class="filter">
+                                    <div class="filter hidden">
                                         <h3>User Score</h3>
                                         <div id="user_score_range" class="full_width range">
                                             <input id="vote_average_gte" name="vote_average.gte" value="0">
@@ -536,7 +494,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="filter">
+                                    <div class="filter hidden">
                                         <h3>Minimum User Votes</h3>
                                         <div id="user_vote_range" class="full_width range">
                                             <input value="0">
@@ -544,7 +502,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="filter">
+                                    <div class="filter hidden">
                                         <h3>Runtime</h3>
                                         <div id="runtime_range" class="full_width range">
                                             <input id="with_runtime_gte" name="with_runtime.gte" value="0">
@@ -552,7 +510,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="filter">
+                                    <div class="filter hidden">
                                         <h3>Keywords</h3>
                                         <div class="k-widget k-multiselect full_width font_size_1 k-multiselect-clearable"
                                             unselectable="on" title="" style="">
@@ -577,16 +535,11 @@
                                             </select>
                                         </div>
                                     </div>
+                                </x-filter-panel>
 
-                                </div>
-
-                                <div class="filter_panel card closed">
-                                    <div class="name">
-                                        <h2>Where To Watch</h2>
-                                        <span class="glyphicons_v2 chevron-right"></span>
-                                    </div>
-
-                                    <div class="filter">
+                                <x-filter-panel>
+                                    <x-slot name="name">Where To Watch</x-slot>
+                                    <div class="filter hidden">
                                         <h3>My Services <span class="tooltip glyphicons_v2 circle-question"
                                                 data-tooltip-id="#ott_tooltip" data-role="tooltip"></span>
                                         </h3>
@@ -598,7 +551,7 @@
                                         </label>
                                     </div>
 
-                                    <div class="filter">
+                                    <div class="filter hidden">
                                         <h3>Country</h3>
                                         <span title="" class="k-widget k-dropdown font_size_1 kendo_dropdown"
                                             unselectable="on" role="listbox" aria-haspopup="listbox"
@@ -1077,18 +1030,12 @@
                                             </ul>
                                         </span>
                                     </div>
-                                </div>
+                                </x-filter-panel>
 
-                                <div id="" class="apply small background_color light_blue disabled">
-                                    <div class="loading_wrapper hide">
-                                        <div class="ball-scale-multiple white loader">
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                    <p class="load_more"><a class="no_click load_more" data-next-page="2"
-                                            data-current-page="1" data-partial="" href="">Search</a>
+                                <div id=""
+                                    class="apply background_color bg-gray-200 disabled light_blue mt-5 px-5 py-2 rounded-3xl small">
+                                    <p class="font-semibold load_more text-center">
+                                        <a class="no_click load_more" href="">Search</a>
                                     </p>
                                 </div>
                             </div>
