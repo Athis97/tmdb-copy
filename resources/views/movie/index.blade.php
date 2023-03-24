@@ -3,7 +3,7 @@
 
         <section class="inner_content">
             <div id="media_v4" class="media discover">
-                <div class="column_wrapper">
+                <div class="column_wrapper flex justify-center item-start">
                     <div class="content_wrapper px-[40px] py-[30px]">
                         <div class="title mb-4">
                             <h2 class="font-semibold text-[1.4em]">Popular Movies</h2>
@@ -1041,61 +1041,20 @@
                             </div>
 
                             <div class="w-4/5">
-                                <div class="white_column no_pad">
-                                    <section id="media_results" class="panel results">
-
+                                <div class="white_column no_pad pl-[30px]">
+                                    <section id="media_results" class="panel results mt-[-30px]">
                                         <div class="media_items results">
-                                            <div id="page_1" class="page_wrapper">
-                                                <div class="card style_1">
-                                                    <div class="image">
-                                                        <div class="wrapper">
-                                                            <a class="image" href="/movie/315162"
-                                                                title="Puss in Boots: The Last Wish">
-                                                                <img loading="lazy" class="poster"
-                                                                    src="/t/p/w220_and_h330_face/kuf6dutpsT0vSVehic3EZIqkOBt.jpg"
-                                                                    srcset="/t/p/w220_and_h330_face/kuf6dutpsT0vSVehic3EZIqkOBt.jpg 1x, /t/p/w440_and_h660_face/kuf6dutpsT0vSVehic3EZIqkOBt.jpg 2x"
-                                                                    alt="">
-
-                                                            </a>
-                                                        </div>
-                                                        <div class="options" data-id="315162"
-                                                            data-object-id="54a5ba9fc3a368764f01212a"
-                                                            data-media-type="movie" data-role="tooltip">
-                                                            <a class="no_click" href="#">
-                                                                <div class="glyphicons_v2 circle-more white">
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="content">
-                                                        <div class="consensus tight">
-                                                            <div class="outer_ring">
-                                                                <div class="user_score_chart 54a5ba9fc3a368764f01212a"
-                                                                    data-percent="84.0" data-track-color="#204529"
-                                                                    data-bar-color="#21d07a">
-                                                                    <div class="percent">
-                                                                        <span class="icon icon-r84"></span>
-                                                                    </div>
-                                                                    <canvas height="34" width="34"></canvas>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <h2><a href="/movie/315162"
-                                                                title="Puss in Boots: The Last Wish">Puss in
-                                                                Boots: The Last Wish</a></h2>
-                                                        <p>Dec 07, 2022</p>
-                                                    </div>
-
-                                                    <div class="hover 315162"></div>
-                                                </div>
+                                            <div id="page_1" class="page_wrapper flex justify-between flex-wrap">
+                                                @foreach ($movies['results'] as $movie)
+                                                    <x-movie-card :movie="$movie"></x-movie-card>
+                                                @endforeach
+                                                {{-- <div class="card style_1 page_1_filler filler"></div>
                                                 <div class="card style_1 page_1_filler filler"></div>
-                                                <div class="card style_1 page_1_filler filler"></div>
-                                                <div class="card style_1 page_1_filler filler"></div>
+                                                <div class="card style_1 page_1_filler filler"></div> --}}
 
                                                 <div id="pagination_page_1" data-next-page="2"
                                                     data-current-page="1"
-                                                    class="pagination infinite background_color light_blue">
+                                                    class="pagination infinite background_color light_blue  mt-[30px] p-0 w-full h-[50px] flex item-center content-center rounded-[8px] bg-[#01b4e4]">
                                                     <div class="loading_wrapper hide">
                                                         <div class="ball-scale-multiple loader">
                                                             <div></div>

@@ -14,8 +14,8 @@ class MovieController extends Controller
      */
     public function index()
     {
-        // return view('movie.index', ['movies' => Http::get('https://api.themoviedb.org/3/movie/popular?api_key=' . env('TMDB_API_KEY') . '&language=en-US')]);
-        return view('movie.index');
+        return view('movie.index', ['movies' => Http::get('https://api.themoviedb.org/3/movie/popular?api_key=' . env('TMDB_API_KEY') . '&language=en-US')]);
+        // return view('movie.index');
     }
 
     /**
