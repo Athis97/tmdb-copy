@@ -20,6 +20,7 @@
         "tailwindcss": "^3.1.0"
     },
     "dependencies": {
+        "bootstrap-star-rating": "^4.1.2",
         "glyphicons": "^0.2.0"
     }
 }

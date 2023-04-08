@@ -80,24 +80,6 @@
                             'name' => 'API',
                         ],
                     ]" />
-                    {{-- <li aria-haspopup="true" class="mr-5 menuitem" role="menuitem" style="z-index: auto;">
-                        <a class="no_click " href="#">More</a>
-
-
-                        <div class="hidden menuitem-hover:block"
-                            style="width: 175.375px; height: 138px; overflow: hidden; display: none; position: absolute; z-index: 10002; top: 40px; left: 0px;"
-                            aria-hidden="true">
-                            <ul class="k-group k-menu-group k-popup k-reset" role="menu"
-                                style="max-height: 741px; overflow: auto; position: absolute; font-size: 16px; font-family: &quot;Source Sans Pro&quot;, Arial, sans-serif; font-stretch: 100%; font-style: normal; font-weight: 400; line-height: 24px; display: none; transform: translateY(-138px);"
-                                data-role="popup" aria-hidden="true">
-                                <li role="menuitem"><a href="/discuss">Discussions</a></li>
-                                <li role="menuitem"><a href="/leaderboard">Leaderboard</a>
-                                </li>
-                                <li role="menuitem"><a href="/talk">Support</a></li>
-                                <li role="menuitem"><a href="/documentation/api">API</a></li>
-                            </ul>
-                        </div>
-                    </li> --}}
                 </ul>
             </div>
 

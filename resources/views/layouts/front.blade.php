@@ -15,6 +15,9 @@
         content="The Movie Database (TMDB) is a popular, user editable database for movies and TV shows.">
     <meta name="msapplication-TileColor" content="#032541">
     <meta name="theme-color" content="#032541">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicon-16x16.png') }}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +29,24 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="{{ mix('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/jquery-3.6.4.min.js') }}"></script>
+    <script src="{{ asset('js/easypiechart.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.easypiechart.min.js') }}"></script>
+    <script>
+        $(document).ready(function() {
+            $('.user_score_chart').each(function() {
+                $(this).easyPieChart({
+                    lineCap: 'round',
+                    lineWidth: 2,
+                    scaleColor: false,
+                    size: 34,
+                    animate: {
+                        enabled: false
+                    }
+                });
+            });
+        });
+    </script>
 
     <style>
         body {

@@ -577,7 +577,7 @@
                                                 style="margin-bottom: 0;">
                                                 <li data-value="8" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Netflix">
-                                                        <img src="/t/p/original/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg"
+                                                        <img src="{{ asset('images/ott/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg') }}"
                                                             width="50" height="50" alt="Netflix">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -585,7 +585,7 @@
                                                 </li>
                                                 <li data-value="119" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Amazon Prime Video">
-                                                        <img src="/t/p/original/emthp39XA2YScoYL1p0sdbAH2WA.jpg"
+                                                        <img src="{{ asset('images/ott/emthp39XA2YScoYL1p0sdbAH2WA.jpg') }}"
                                                             width="50" height="50" alt="Amazon Prime Video">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -593,7 +593,7 @@
                                                 </li>
                                                 <li data-value="122" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Hotstar">
-                                                        <img src="/t/p/original/7Fl8ylPDclt3ZYgNbW2t7rbZE9I.jpg"
+                                                        <img src="{{ asset('images/ott/7Fl8ylPDclt3ZYgNbW2t7rbZE9I.jpg') }}"
                                                             width="50" height="50" alt="Hotstar">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -601,7 +601,7 @@
                                                 </li>
                                                 <li data-value="121" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Voot">
-                                                        <img src="/t/p/original/2u1uElmpm4lProS7C9RYcaYLYt1.jpg"
+                                                        <img src="{{ asset('images/ott/2u1uElmpm4lProS7C9RYcaYLYt1.jpg') }}"
                                                             width="50" height="50" alt="Voot">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -609,7 +609,7 @@
                                                 </li>
                                                 <li data-value="220" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Jio Cinema">
-                                                        <img src="/t/p/original/jRpQbuHbGR0MzSIBxJjxZxpXhqC.jpg"
+                                                        <img src="{{ asset('images/ott/jRpQbuHbGR0MzSIBxJjxZxpXhqC.jpg') }}"
                                                             width="50" height="50" alt="Jio Cinema">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -617,7 +617,7 @@
                                                 </li>
                                                 <li data-value="232" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Zee5">
-                                                        <img src="/t/p/original/ajbCmwvZ8HiePHZaOVEgm9MzyuA.jpg"
+                                                        <img src="{{ asset('images/ott/ajbCmwvZ8HiePHZaOVEgm9MzyuA.jpg') }}"
                                                             width="50" height="50" alt="Zee5">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -625,7 +625,7 @@
                                                 </li>
                                                 <li data-value="350" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Apple TV Plus">
-                                                        <img src="/t/p/original/6uhKBfmtzFqOcLousHwZuzcrScK.jpg"
+                                                        <img src="{{ asset('images/ott/6uhKBfmtzFqOcLousHwZuzcrScK.jpg') }}"
                                                             width="50" height="50" alt="Apple TV Plus">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -633,7 +633,7 @@
                                                 </li>
                                                 <li data-value="2" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Apple TV">
-                                                        <img src="/t/p/original/peURlLlr8jggOwK53fJ5wdQl05y.jpg"
+                                                        <img src="{{ asset('images/ott/peURlLlr8jggOwK53fJ5wdQl05y.jpg') }}"
                                                             width="50" height="50" alt="Apple TV">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -641,7 +641,7 @@
                                                 </li>
                                                 <li data-value="218" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Eros Now">
-                                                        <img src="/t/p/original/4XYI2rzRm34skcvamytegQx7Dmu.jpg"
+                                                        <img src="{{ asset('images/ott/4XYI2rzRm34skcvamytegQx7Dmu.jpg') }}"
                                                             width="50" height="50" alt="Eros Now">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -649,7 +649,7 @@
                                                 </li>
                                                 <li data-value="3" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Google Play Movies">
-                                                        <img src="/t/p/original/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg"
+                                                        <img src="{{ asset('images/ott/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg') }}"
                                                             width="50" height="50" alt="Google Play Movies">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -657,7 +657,7 @@
                                                 </li>
                                                 <li data-value="11" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="MUBI">
-                                                        <img src="/t/p/original/bVR4Z1LCHY7gidXAJF5pMa4QrDS.jpg"
+                                                        <img src="{{ asset('images/ott/bVR4Z1LCHY7gidXAJF5pMa4QrDS.jpg') }}"
                                                             width="50" height="50" alt="MUBI">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -665,7 +665,7 @@
                                                 </li>
                                                 <li data-value="237" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Sony Liv">
-                                                        <img src="/t/p/original/odTur9CmVtzsRUAZ9910tPM4XwL.jpg"
+                                                        <img src="{{ asset('images/ott/odTur9CmVtzsRUAZ9910tPM4XwL.jpg') }}"
                                                             width="50" height="50" alt="Sony Liv">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -673,7 +673,7 @@
                                                 </li>
                                                 <li data-value="192" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="YouTube">
-                                                        <img src="/t/p/original/oIkQkEkwfmcG7IGpRR1NB8frZZM.jpg"
+                                                        <img src="{{ asset('images/ott/oIkQkEkwfmcG7IGpRR1NB8frZZM.jpg') }}"
                                                             width="50" height="50" alt="YouTube">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -681,7 +681,7 @@
                                                 </li>
                                                 <li data-value="100" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="GuideDoc">
-                                                        <img src="/t/p/original/iX0pvJ2GFATbVIH5IHMwG0ffIdV.jpg"
+                                                        <img src="{{ asset('images/ott/iX0pvJ2GFATbVIH5IHMwG0ffIdV.jpg') }}"
                                                             width="50" height="50" alt="GuideDoc">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -689,7 +689,7 @@
                                                 </li>
                                                 <li data-value="175" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Netflix Kids">
-                                                        <img src="/t/p/original/j2OLGxyy0gKbPVI0DYFI2hJxP6y.jpg"
+                                                        <img src="{{ asset('images/ott/j2OLGxyy0gKbPVI0DYFI2hJxP6y.jpg') }}"
                                                             width="50" height="50" alt="Netflix Kids">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -697,7 +697,7 @@
                                                 </li>
                                                 <li data-value="73" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Tubi TV">
-                                                        <img src="/t/p/original/w2TDH9TRI7pltf5LjN3vXzs7QbN.jpg"
+                                                        <img src="{{ asset('images/ott/w2TDH9TRI7pltf5LjN3vXzs7QbN.jpg') }}"
                                                             width="50" height="50" alt="Tubi TV">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -705,7 +705,7 @@
                                                 </li>
                                                 <li data-value="255" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Yupp TV">
-                                                        <img src="/t/p/original/8qNJcPBHZ4qewHrDJ7C7s2DBQ3V.jpg"
+                                                        <img src="{{ asset('images/ott/8qNJcPBHZ4qewHrDJ7C7s2DBQ3V.jpg') }}"
                                                             width="50" height="50" alt="Yupp TV">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -713,7 +713,7 @@
                                                 </li>
                                                 <li data-value="309" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Sun Nxt">
-                                                        <img src="/t/p/original/uW4dPCcbXaaFTyfL5HwhuDt5akK.jpg"
+                                                        <img src="{{ asset('images/ott/uW4dPCcbXaaFTyfL5HwhuDt5akK.jpg') }}"
                                                             width="50" height="50" alt="Sun Nxt">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -721,7 +721,7 @@
                                                 </li>
                                                 <li data-value="315" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Hoichoi">
-                                                        <img src="/t/p/original/d4vHcXY9rwnr763wQns2XJThclt.jpg"
+                                                        <img src="{{ asset('images/ott/d4vHcXY9rwnr763wQns2XJThclt.jpg') }}"
                                                             width="50" height="50" alt="Hoichoi">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -729,7 +729,7 @@
                                                 </li>
                                                 <li data-value="319" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Alt Balaji">
-                                                        <img src="/t/p/original/xiqTOBxOnlMy1nvppZcFhCDsP0f.jpg"
+                                                        <img src="{{ asset('images/ott/xiqTOBxOnlMy1nvppZcFhCDsP0f.jpg') }}"
                                                             width="50" height="50" alt="Alt Balaji">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -737,7 +737,7 @@
                                                 </li>
                                                 <li data-value="437" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Hungama Play">
-                                                        <img src="/t/p/original/4QEQsvCBnORNIg9EDnrRSiEw61D.jpg"
+                                                        <img src="{{ asset('images/ott/4QEQsvCBnORNIg9EDnrRSiEw61D.jpg') }}"
                                                             width="50" height="50" alt="Hungama Play">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -745,7 +745,7 @@
                                                 </li>
                                                 <li data-value="190" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Curiosity Stream">
-                                                        <img src="/t/p/original/67Ee4E6qOkQGHeUTArdJ1qRxzR2.jpg"
+                                                        <img src="{{ asset('images/ott/67Ee4E6qOkQGHeUTArdJ1qRxzR2.jpg') }}"
                                                             width="50" height="50" alt="Curiosity Stream">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -753,7 +753,7 @@
                                                 </li>
                                                 <li data-value="476" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="EPIC ON">
-                                                        <img src="/t/p/original/q03pok7xSxYJaENuYs547qa6upY.jpg"
+                                                        <img src="{{ asset('images/ott/q03pok7xSxYJaENuYs547qa6upY.jpg') }}"
                                                             width="50" height="50" alt="EPIC ON">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -761,7 +761,7 @@
                                                 </li>
                                                 <li data-value="474" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="ShemarooMe">
-                                                        <img src="/t/p/original/vIhSFgmp0HXZbUHDscuhpU6S2Z6.jpg"
+                                                        <img src="{{ asset('images/ott/vIhSFgmp0HXZbUHDscuhpU6S2Z6.jpg') }}"
                                                             width="50" height="50" alt="ShemarooMe">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -769,7 +769,7 @@
                                                 </li>
                                                 <li data-value="500" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="TVF Play">
-                                                        <img src="/t/p/original/8ugSQ1g7E8fXFnKFT5G8XOMcmS0.jpg"
+                                                        <img src="{{ asset('images/ott/8ugSQ1g7E8fXFnKFT5G8XOMcmS0.jpg') }}"
                                                             width="50" height="50" alt="TVF Play">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -777,7 +777,7 @@
                                                 </li>
                                                 <li data-value="502" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Tata Play">
-                                                        <img src="/t/p/original/qLR6qzB1IcANZUqMEkLf6Sh8Y8s.jpg"
+                                                        <img src="{{ asset('images/ott/qLR6qzB1IcANZUqMEkLf6Sh8Y8s.jpg') }}"
                                                             width="50" height="50" alt="Tata Play">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -785,7 +785,7 @@
                                                 </li>
                                                 <li data-value="510" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Discovery Plus">
-                                                        <img src="/t/p/original/wYRiUqIgWcfUvO6OPcXuUNd4tc2.jpg"
+                                                        <img src="{{ asset('images/ott/wYRiUqIgWcfUvO6OPcXuUNd4tc2.jpg') }}"
                                                             width="50" height="50" alt="Discovery Plus">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -793,7 +793,7 @@
                                                 </li>
                                                 <li data-value="482" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="ManoramaMax">
-                                                        <img src="/t/p/original/iRv3wbUEPuwYYPSKwUxPaMPKGM4.jpg"
+                                                        <img src="{{ asset('images/ott/iRv3wbUEPuwYYPSKwUxPaMPKGM4.jpg') }}"
                                                             width="50" height="50" alt="ManoramaMax">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -801,7 +801,7 @@
                                                 </li>
                                                 <li data-value="471" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="FILMRISE">
-                                                        <img src="/t/p/original/mEiBVz62M9j3TCebmOspMfqkIn.jpg"
+                                                        <img src="{{ asset('images/ott/mEiBVz62M9j3TCebmOspMfqkIn.jpg') }}"
                                                             width="50" height="50" alt="FILMRISE">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -809,7 +809,7 @@
                                                 </li>
                                                 <li data-value="515" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="MX Player">
-                                                        <img src="/t/p/original/dH4BZucVyb5lW97TEbZ7RTAugjg.jpg"
+                                                        <img src="{{ asset('images/ott/dH4BZucVyb5lW97TEbZ7RTAugjg.jpg') }}"
                                                             width="50" height="50" alt="MX Player">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -817,7 +817,7 @@
                                                 </li>
                                                 <li data-value="521" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Spamflix">
-                                                        <img src="/t/p/original/xN97FFkFAdY1JvHhS4zyPD4URgD.jpg"
+                                                        <img src="{{ asset('images/ott/xN97FFkFAdY1JvHhS4zyPD4URgD.jpg') }}"
                                                             width="50" height="50" alt="Spamflix">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -825,7 +825,7 @@
                                                 </li>
                                                 <li data-value="532" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="aha">
-                                                        <img src="/t/p/original/m3NWxxR23l1w1e156fyTuw931gx.jpg"
+                                                        <img src="{{ asset('images/ott/m3NWxxR23l1w1e156fyTuw931gx.jpg') }}"
                                                             width="50" height="50" alt="aha">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -833,7 +833,7 @@
                                                 </li>
                                                 <li data-value="545" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Spuul">
-                                                        <img src="/t/p/original/iJGVfWTDddgipZ7mJCCEYzmRYrP.jpg"
+                                                        <img src="{{ asset('images/ott/iJGVfWTDddgipZ7mJCCEYzmRYrP.jpg') }}"
                                                             width="50" height="50" alt="Spuul">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -841,7 +841,7 @@
                                                 </li>
                                                 <li data-value="538" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Plex">
-                                                        <img src="/t/p/original/wDWvnupneMbY6RhBTHQC9zU0SCX.jpg"
+                                                        <img src="{{ asset('images/ott/wDWvnupneMbY6RhBTHQC9zU0SCX.jpg') }}"
                                                             width="50" height="50" alt="Plex">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -849,7 +849,7 @@
                                                 </li>
                                                 <li data-value="546" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="WOW Presents Plus">
-                                                        <img src="/t/p/original/mgD0T960hnYU4gBxbPPBrcDfgWg.jpg"
+                                                        <img src="{{ asset('images/ott/mgD0T960hnYU4gBxbPPBrcDfgWg.jpg') }}"
                                                             width="50" height="50" alt="WOW Presents Plus">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -857,7 +857,7 @@
                                                 </li>
                                                 <li data-value="551" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Magellan TV">
-                                                        <img src="/t/p/original/gekkP93StjYdiMAInViVmrnldNY.jpg"
+                                                        <img src="{{ asset('images/ott/gekkP93StjYdiMAInViVmrnldNY.jpg') }}"
                                                             width="50" height="50" alt="Magellan TV">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -865,7 +865,7 @@
                                                 </li>
                                                 <li data-value="554" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="BroadwayHD">
-                                                        <img src="/t/p/original/xLu1rkZNOKuNnRNr70wySosfTBf.jpg"
+                                                        <img src="{{ asset('images/ott/xLu1rkZNOKuNnRNr70wySosfTBf.jpg') }}"
                                                             width="50" height="50" alt="BroadwayHD">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -873,7 +873,7 @@
                                                 </li>
                                                 <li data-value="559" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Filmzie">
-                                                        <img src="/t/p/original/olmH7t5tEng8Yuq33KmvpvaaVIg.jpg"
+                                                        <img src="{{ asset('images/ott/olmH7t5tEng8Yuq33KmvpvaaVIg.jpg') }}"
                                                             width="50" height="50" alt="Filmzie">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -881,7 +881,7 @@
                                                 </li>
                                                 <li data-value="561" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Lionsgate Play">
-                                                        <img src="/t/p/original/vrFpju3t7kplDbFsN5GLJpG0obj.jpg"
+                                                        <img src="{{ asset('images/ott/vrFpju3t7kplDbFsN5GLJpG0obj.jpg') }}"
                                                             width="50" height="50" alt="Lionsgate Play">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -889,7 +889,7 @@
                                                 </li>
                                                 <li data-value="562" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="MovieSaints">
-                                                        <img src="/t/p/original/fdWE8jpmQqkZrwg2ZMuCLz6ms5P.jpg"
+                                                        <img src="{{ asset('images/ott/fdWE8jpmQqkZrwg2ZMuCLz6ms5P.jpg') }}"
                                                             width="50" height="50" alt="MovieSaints">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -897,7 +897,7 @@
                                                 </li>
                                                 <li data-value="444" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Dekkoo">
-                                                        <img src="/t/p/original/u2H29LCxRzjZVUoZUQAHKm5P8Zc.jpg"
+                                                        <img src="{{ asset('images/ott/u2H29LCxRzjZVUoZUQAHKm5P8Zc.jpg') }}"
                                                             width="50" height="50" alt="Dekkoo">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -905,7 +905,7 @@
                                                 </li>
                                                 <li data-value="567" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="True Story">
-                                                        <img src="/t/p/original/osREemsc9uUB2J8VTkQeAVk2fu9.jpg"
+                                                        <img src="{{ asset('images/ott/osREemsc9uUB2J8VTkQeAVk2fu9.jpg') }}"
                                                             width="50" height="50" alt="True Story">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -913,7 +913,7 @@
                                                 </li>
                                                 <li data-value="569" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="DocAlliance Films">
-                                                        <img src="/t/p/original/aQ1ritN00jXc7RAFfUoQKGAAfp7.jpg"
+                                                        <img src="{{ asset('images/ott/aQ1ritN00jXc7RAFfUoQKGAAfp7.jpg') }}"
                                                             width="50" height="50" alt="DocAlliance Films">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -921,7 +921,7 @@
                                                 </li>
                                                 <li data-value="614" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="VI movies and tv">
-                                                        <img src="/t/p/original/h1PNHFp50cceDZ8jXUMnuVVMIw2.jpg"
+                                                        <img src="{{ asset('images/ott/h1PNHFp50cceDZ8jXUMnuVVMIw2.jpg') }}"
                                                             width="50" height="50" alt="VI movies and tv">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -929,7 +929,7 @@
                                                 </li>
                                                 <li data-value="677" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Eventive">
-                                                        <img src="/t/p/original/fadQYOyKL0tqfyj012nYJxm3N2I.jpg"
+                                                        <img src="{{ asset('images/ott/fadQYOyKL0tqfyj012nYJxm3N2I.jpg') }}"
                                                             width="50" height="50" alt="Eventive">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -938,7 +938,7 @@
                                                 <li data-value="688" class="" data-role="tooltip">
                                                     <a class="no_click" href="#"
                                                         title="ShortsTV Amazon Channel">
-                                                        <img src="/t/p/original/m0mvKlSjn38S9w7WVNV7a7XyPIe.jpg"
+                                                        <img src="{{ asset('images/ott/m0mvKlSjn38S9w7WVNV7a7XyPIe.jpg') }}"
                                                             width="50" height="50"
                                                             alt="ShortsTV Amazon Channel">
                                                         <div><span class="glyphicons_v2 check white"></span>
@@ -947,7 +947,7 @@
                                                 </li>
                                                 <li data-value="10" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Amazon Video">
-                                                        <img src="/t/p/original/5NyLm42TmCqCMOZFvH4fcoSNKEW.jpg"
+                                                        <img src="{{ asset('images/ott/5NyLm42TmCqCMOZFvH4fcoSNKEW.jpg') }}"
                                                             width="50" height="50" alt="Amazon Video">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -955,7 +955,7 @@
                                                 </li>
                                                 <li data-value="692" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Cultpix">
-                                                        <img src="/t/p/original/59azlQKUgFdYq6QI5QEAxIeecyL.jpg"
+                                                        <img src="{{ asset('images/ott/59azlQKUgFdYq6QI5QEAxIeecyL.jpg') }}"
                                                             width="50" height="50" alt="Cultpix">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -963,7 +963,7 @@
                                                 </li>
                                                 <li data-value="701" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="FilmBox+">
-                                                        <img src="/t/p/original/4FqTBYsUSZgS9z9UGKgxSDBbtc8.jpg"
+                                                        <img src="{{ asset('images/ott/4FqTBYsUSZgS9z9UGKgxSDBbtc8.jpg') }}"
                                                             width="50" height="50" alt="FilmBox+">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -972,7 +972,7 @@
                                                 <li data-value="528" class="" data-role="tooltip">
                                                     <a class="no_click" href="#"
                                                         title="AMC+ Amazon Channel">
-                                                        <img src="/t/p/original/9edKQczyuMmQM1yS520hgmJbcaC.jpg"
+                                                        <img src="{{ asset('images/ott/9edKQczyuMmQM1yS520hgmJbcaC.jpg') }}"
                                                             width="50" height="50"
                                                             alt="AMC+ Amazon Channel">
                                                         <div><span class="glyphicons_v2 check white"></span>
@@ -982,7 +982,7 @@
                                                 <li data-value="196" class="" data-role="tooltip">
                                                     <a class="no_click" href="#"
                                                         title="AcornTV Amazon Channel">
-                                                        <img src="/t/p/original/8WWD7t5Irwq9kAH4rufQ4Pe1Dog.jpg"
+                                                        <img src="{{ asset('images/ott/8WWD7t5Irwq9kAH4rufQ4Pe1Dog.jpg') }}"
                                                             width="50" height="50"
                                                             alt="AcornTV Amazon Channel">
                                                         <div><span class="glyphicons_v2 check white"></span>
@@ -991,7 +991,7 @@
                                                 </li>
                                                 <li data-value="1771" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Takflix">
-                                                        <img src="/t/p/original/cnIHBy3uLWhHRR7VeWQhK3ZsYP0.jpg"
+                                                        <img src="{{ asset('images/ott/cnIHBy3uLWhHRR7VeWQhK3ZsYP0.jpg') }}"
                                                             width="50" height="50" alt="Takflix">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -999,7 +999,7 @@
                                                 </li>
                                                 <li data-value="445" class="" data-role="tooltip">
                                                     <a class="no_click" href="#" title="Classix">
-                                                        <img src="/t/p/original/iaMw6nOyxUzXSacrLQ0Au6CfZkc.jpg"
+                                                        <img src="{{ asset('images/ott/iaMw6nOyxUzXSacrLQ0Au6CfZkc.jpg') }}"
                                                             width="50" height="50" alt="Classix">
                                                         <div><span class="glyphicons_v2 check white"></span>
                                                         </div>
@@ -1008,7 +1008,7 @@
                                                 <li data-value="1854" class="" data-role="tooltip">
                                                     <a class="no_click" href="#"
                                                         title="AMC Plus Apple TV Channel ">
-                                                        <img src="/t/p/original/yFgm7vxwKZ4jfXIlPizlgoba2yi.jpg"
+                                                        <img src="{{ asset('images/ott/yFgm7vxwKZ4jfXIlPizlgoba2yi.jpg') }}"
                                                             width="50" height="50"
                                                             alt="AMC Plus Apple TV Channel ">
                                                         <div><span class="glyphicons_v2 check white"></span>
