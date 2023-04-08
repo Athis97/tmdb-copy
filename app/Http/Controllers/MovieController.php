@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
 
 class MovieController extends Controller
@@ -14,8 +15,14 @@ class MovieController extends Controller
      */
     public function index()
     {
-        return view('movie.index', ['movies' => Http::get('https://api.themoviedb.org/3/movie/popular?api_key=' . env('TMDB_API_KEY') . '&language=en-US')]);
-        // return view('movie.index');
+        return view('movie.index', ['movies' => $this->movies()]);
+    }
+
+    public function movies()
+    {
+        return Cache::remember('popular-movies', now()->addSeconds(2), function () {
+            return Http::get('https://api.themoviedb.org/3/movie/popular?api_key=' . env('TMDB_API_KEY') . '&language=en-US');
+        });
     }
 
     /**

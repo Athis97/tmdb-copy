@@ -8,69 +8,96 @@
                 </a>
 
                 <ul class="flex" data-role="menu" tabindex="0" role="menubar">
-                    <li aria-haspopup="true" class="mr-5" role="menuitem">
-                        <a class="no_click k-link k-menu-link" href="/movie">Movies<span
-                                class="k-menu-expand-arrow k-icon k-i-arrow-60-down"></span></a>
+                    <x-menu-item :menu="[
+                        'link' => '/movie',
+                        'name' => 'Movies',
+                    ]" :submenu="[
+                        [
+                            'link' => '/movie',
+                            'name' => 'Popular',
+                        ],
+                        [
+                            'link' => '/movie/now-playing',
+                            'name' => 'Now Playing',
+                        ],
+                        [
+                            'link' => '/movie/upcoming',
+                            'name' => 'Upcoming',
+                        ],
+                        [
+                            'link' => '/movie/top-rated',
+                            'name' => 'Top Rated',
+                        ],
+                    ]" />
+                    <x-menu-item :menu="[
+                        'link' => '/tv',
+                        'name' => 'TV Shows',
+                    ]" :submenu="[
+                        [
+                            'link' => '/tv',
+                            'name' => 'Popular',
+                        ],
+                        [
+                            'link' => '/tv/airing-today',
+                            'name' => 'Airing Today',
+                        ],
+                        [
+                            'link' => '/tv/on-the-air',
+                            'name' => 'On TV',
+                        ],
+                        [
+                            'link' => '/tv/top-rated',
+                            'name' => 'Top Rated',
+                        ],
+                    ]" />
+                    <x-menu-item :menu="[
+                        'link' => '/person',
+                        'name' => 'People',
+                    ]" :submenu="[
+                        [
+                            'link' => '/person',
+                            'name' => 'Popular People',
+                        ],
+                    ]" />
+                    <x-menu-item :menu="[
+                        'link' => '#',
+                        'name' => 'More',
+                    ]" :submenu="[
+                        [
+                            'link' => '/discuss',
+                            'name' => 'Discussions',
+                        ],
+                        [
+                            'link' => '/leaderboard',
+                            'name' => 'Leaderboard',
+                        ],
+                        [
+                            'link' => '/talk',
+                            'name' => 'Support',
+                        ],
+                        [
+                            'link' => '/documentation/api',
+                            'name' => 'API',
+                        ],
+                    ]" />
+                    {{-- <li aria-haspopup="true" class="mr-5 menuitem" role="menuitem" style="z-index: auto;">
+                        <a class="no_click " href="#">More</a>
 
-                        <ul class="hidden" role="menu" aria-hidden="true">
-                            <li class="k-item k-menu-item k-state-default k-first" role="menuitem"><a href="/movie"
-                                    class="k-link k-menu-link">Popular</a></li>
-                            <li class="k-item k-menu-item k-state-default" role="menuitem"><a href="/movie/now-playing"
-                                    class="k-link k-menu-link">Now Playing</a>
-                            </li>
-                            <li class="k-item k-menu-item k-state-default" role="menuitem"><a href="/movie/upcoming"
-                                    class="k-link k-menu-link">Upcoming</a></li>
-                            <li class="k-item k-menu-item k-state-default k-last" role="menuitem"><a
-                                    href="/movie/top-rated" class="k-link k-menu-link">Top Rated</a></li>
-                        </ul>
-                    </li>
-                    <li aria-haspopup="true" class="mr-5" role="menuitem">
-                        <a class="no_click k-link k-menu-link" href="/tv">TV Shows<span
-                                class="k-menu-expand-arrow k-icon k-i-arrow-60-down"></span></a>
 
-                        <ul class="hidden" role="menu" aria-hidden="true">
-                            <li class="k-item k-menu-item k-state-default k-first" role="menuitem"><a href="/tv"
-                                    class="k-link k-menu-link">Popular</a></li>
-                            <li class="k-item k-menu-item k-state-default" role="menuitem"><a href="/tv/airing-today"
-                                    class="k-link k-menu-link">Airing Today</a></li>
-                            <li class="k-item k-menu-item k-state-default" role="menuitem"><a href="/tv/on-the-air"
-                                    class="k-link k-menu-link">On TV</a></li>
-                            <li class="k-item k-menu-item k-state-default k-last" role="menuitem"><a
-                                    href="/tv/top-rated" class="k-link k-menu-link">Top Rated</a></li>
-                        </ul>
-                    </li>
-                    <li aria-haspopup="true" class="mr-5" role="menuitem">
-                        <a class="no_click k-link k-menu-link" href="/person">People<span
-                                class="k-menu-expand-arrow k-icon k-i-arrow-60-down"></span></a>
-
-                        <ul class="hidden" role="menu" aria-hidden="true">
-                            <li class="k-item k-menu-item k-state-default k-first k-last" role="menuitem"><a
-                                    href="/person" class="k-link k-menu-link">Popular People</a></li>
-                        </ul>
-                    </li>
-                    <li aria-haspopup="true" class="mr-5" role="menuitem" style="z-index: auto;">
-                        <a class="no_click k-link k-menu-link" href="#">More<span
-                                class="k-menu-expand-arrow k-icon k-i-arrow-60-down"></span></a>
-
-
-                        <div class="hidden"
+                        <div class="hidden menuitem-hover:block"
                             style="width: 175.375px; height: 138px; overflow: hidden; display: none; position: absolute; z-index: 10002; top: 40px; left: 0px;"
                             aria-hidden="true">
                             <ul class="k-group k-menu-group k-popup k-reset" role="menu"
                                 style="max-height: 741px; overflow: auto; position: absolute; font-size: 16px; font-family: &quot;Source Sans Pro&quot;, Arial, sans-serif; font-stretch: 100%; font-style: normal; font-weight: 400; line-height: 24px; display: none; transform: translateY(-138px);"
                                 data-role="popup" aria-hidden="true">
-                                <li class="k-item k-menu-item k-state-default k-first" role="menuitem"><a
-                                        href="/discuss" class="k-link k-menu-link">Discussions</a></li>
-                                <li class="k-item k-menu-item k-state-default" role="menuitem"><a href="/leaderboard"
-                                        class="k-link k-menu-link">Leaderboard</a>
+                                <li role="menuitem"><a href="/discuss">Discussions</a></li>
+                                <li role="menuitem"><a href="/leaderboard">Leaderboard</a>
                                 </li>
-                                <li class="k-item k-menu-item k-state-default" role="menuitem"><a href="/talk"
-                                        class="k-link k-menu-link">Support</a></li>
-                                <li class="k-item k-menu-item k-state-default k-last" role="menuitem"><a
-                                        href="/documentation/api" class="k-link k-menu-link">API</a></li>
+                                <li role="menuitem"><a href="/talk">Support</a></li>
+                                <li role="menuitem"><a href="/documentation/api">API</a></li>
                             </ul>
                         </div>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
 
@@ -104,12 +131,12 @@
                         <span tabindex="-1" role="presentation"
                             class="k-widget k-autocomplete k-autocomplete-clearable k-state-default"
                             style=""><input dir="auto" id="search_v4" name="query" type="text"
-                                tabindex="1" autocorrect="off" autofill="off" autocomplete="off"
-                                spellcheck="false" placeholder="Search for a movie, tv show, person..."
-                                value="" data-role="autocomplete" class="k-input" role="textbox"
-                                aria-haspopup="true" aria-disabled="false" aria-readonly="false"
-                                aria-owns="search_v4_listbox" aria-autocomplete="list"><span unselectable="on"
-                                class="k-clear-value k-hidden" title="clear" role="button" tabindex="-1"><span
+                                tabindex="1" autocorrect="off" autofill="off" autocomplete="off" spellcheck="false"
+                                placeholder="Search for a movie, tv show, person..." value=""
+                                data-role="autocomplete" class="k-input" role="textbox" aria-haspopup="true"
+                                aria-disabled="false" aria-readonly="false" aria-owns="search_v4_listbox"
+                                aria-autocomplete="list"><span unselectable="on" class="k-clear-value k-hidden"
+                                title="clear" role="button" tabindex="-1"><span
                                     class="k-icon k-i-x"></span></span><span
                                 class="k-icon k-i-loading k-hidden"></span></span>
                     </label>
