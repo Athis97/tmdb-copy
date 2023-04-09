@@ -38,7 +38,7 @@
         <h2 class="font-semibold m-0 text-[1em] w-full"><a href="/movie/{{ $movie['id'] }}"
                 title="Puss in Boots: The Last Wish" class="font-bold text-black">{{ $movie['original_title'] }}</a>
         </h2>
-        <p class="m-0 p-0 text-[#0009] text-[1em]">{{ $movie['release_date'] ?? null }}</p>
+        <p class="m-0 p-0 text-[#0009] text-[1em]">{{ $movie['release_date'] ?? '' }}</p>
     </div>
 
     <div class="hover {{ $movie['id'] }}"></div>

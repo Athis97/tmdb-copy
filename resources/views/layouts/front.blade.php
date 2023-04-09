@@ -73,6 +73,11 @@
         body {
             font-family: "Source Sans Pro", Arial, sans-serif;
         }
+
+        .glyphicons_v2:hover {
+            opacity: 1;
+            filter: brightness(0) saturate(100%) invert(53%) sepia(33%) saturate(3054%) hue-rotate(156deg) brightness(98%) contrast(99%);
+        }
     </style>
 
     <!-- Scripts -->
