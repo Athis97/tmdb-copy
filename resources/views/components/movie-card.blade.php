@@ -21,14 +21,16 @@
     </div>
     <div class="content content-start flex flex-wrap p-[26px_10px_12px_10px] relative">
         <div
-            class="absolute consensus h-[38px] inline-block left-[10px] scale-100 tight top-[-19px] transition-transform w-[38px]">
-            <div class="bg-[#081c22] inline-block outer_ring p-[2px] rounded-[50%] w-[38px] h-[38px]">
-                <div class="inline-block relative text-center user_score_chart w-full h-full" data-percent="84.0"
-                    data-track-color="#204529" data-bar-color="#21d07a">
-                    <div class="flex item-center justify-center percent">
-                        <span class="text-white text-[0.6em] icon icon-r{{ $movie['vote_average'] * 10 }}"></span>
+            class="absolute consensus h-[38px] inline-block left-[10px] scale-100 tight top-[-19px] transition-transform w-[38px] scale-1">
+            <div class="bg-[#081c22] h-[38px] inline-block mr-0 outer_ring p-[2px] rounded-[50%] w-[38px]">
+                <div class="flex h-full items-center justify-center relative text-center user_score_chart w-full"
+                    data-percent="{{ $movie['vote_average'] * 10 }}"
+                    data-track-color="{{ $movie['vote_average'] < 7 ? ($movie['vote_average'] < 4 ? '#571435' : '#423d0f') : '#204529' }}"
+                    data-bar-color="{{ $movie['vote_average'] < 7 ? ($movie['vote_average'] < 4 ? '#db2360' : '#d2d531') : '#21d07a' }}">
+                    <div class="absolute flex h-full items-center justify-center percent w-full">
+                        <span
+                            class="text-white pt-[1px] pl-[1px] text-[0.6em] icon icon-r{{ $movie['vote_average'] * 10 }}"></span>
                     </div>
-                    <canvas class="absolute top-0 left-0 bg-transparent" height="34" width="34"></canvas>
                 </div>
             </div>
         </div>
