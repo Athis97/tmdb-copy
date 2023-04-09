@@ -33,27 +33,6 @@
     <script src="{{ asset('js/easypiechart.min.js') }}"></script>
     <script src="{{ asset('js/jquery.easypiechart.min.js') }}"></script>
     <script>
-        function pagination() {
-            $('.page_wrapper .pagination .load_more a.load_more').click(function(e) {
-                var data_next_page = $(this).attr('data-next-page');
-                e.preventDefault();
-
-                $.ajax({
-                    type: 'POST',
-                    url: $(location).attr('href'),
-                    data: {
-                        "_token": "{{ csrf_token() }}",
-                        "data_next_page": data_next_page,
-                    },
-                    success: function(data) {
-                        $('.page_wrapper .pagination').remove();
-                        $('.page_wrapper').append(data);
-                        pieChart();
-                    }
-                });
-            });
-        }
-
         function pieChart() {
             $('.user_score_chart').each(function() {
                 $(this).easyPieChart({
@@ -69,7 +48,24 @@
         }
         $(document).ready(function() {
             pieChart();
-            pagination();
+            $('.media_items').on('click', 'div.pagination p.load_more a.load_more', function(e) {
+                var data_next_page = $(this).attr('data-next-page');
+                e.preventDefault();
+
+                $.ajax({
+                    type: 'POST',
+                    url: $(location).attr('href'),
+                    data: {
+                        "_token": "{{ csrf_token() }}",
+                        "data_next_page": data_next_page,
+                    },
+                    success: function(data) {
+                        $('.media_items div.pagination').remove();
+                        $('.media_items').append(data);
+                        pieChart();
+                    }
+                });
+            });
         });
     </script>
 
