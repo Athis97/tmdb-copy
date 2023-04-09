@@ -1044,29 +1044,7 @@
                                 <div class="white_column no_pad pl-[30px]">
                                     <section id="media_results" class="panel results mt-[-30px]">
                                         <div class="media_items results">
-                                            <div id="page_1" class="page_wrapper flex justify-between flex-wrap">
-                                                @foreach ($movies['results'] as $movie)
-                                                    <x-movie-card :movie="$movie"></x-movie-card>
-                                                @endforeach
-                                                {{-- <div class="card style_1 page_1_filler filler"></div>
-                                                <div class="card style_1 page_1_filler filler"></div>
-                                                <div class="card style_1 page_1_filler filler"></div> --}}
-
-                                                <div id="pagination_page_1" data-next-page="2"
-                                                    data-current-page="1"
-                                                    class="pagination infinite background_color light_blue  mt-[30px] p-0 w-full h-[50px] flex item-center content-center rounded-[8px] bg-[#01b4e4]">
-                                                    <div class="loading_wrapper hide">
-                                                        <div class="ball-scale-multiple loader">
-                                                            <div></div>
-                                                            <div></div>
-                                                            <div></div>
-                                                        </div>
-                                                    </div>
-                                                    <p class="load_more"><a class="no_click load_more"
-                                                            data-next-page="2" data-current-page="1"
-                                                            href="/movie?page=2">Load More</a></p>
-                                                </div>
-                                            </div>
+                                            <x-list-page-wrapper :movies=$movies />
                                         </div>
                                     </section>
                                 </div>

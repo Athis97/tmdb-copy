@@ -18,10 +18,17 @@ class MovieController extends Controller
         return view('movie.index', ['movies' => $this->movies()]);
     }
 
-    public function movies()
+    public function pagination(Request $request)
     {
-        return Cache::remember('popular-movies', now()->addSeconds(2), function () {
-            return Http::get('https://api.themoviedb.org/3/movie/popular?api_key=' . env('TMDB_API_KEY') . '&language=en-US');
+        if ($page = $request->data_next_page) {
+            return view('components.list-page-wrapper', ['movies' => $this->movies($page)]);
+        }
+    }
+
+    public function movies($page = 1)
+    {
+        return Cache::remember('popular-movies_' . $page, now()->addSeconds(2), function () use ($page) {
+            return Http::get('https://api.themoviedb.org/3/movie/popular?api_key=' . env('TMDB_API_KEY') . '&language=en-US' . ($page > 1 ? '&page=' . $page : ''));
         });
     }
 
