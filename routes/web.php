@@ -38,6 +38,8 @@ Route::post('/movie/upcoming', [MovieController::class, 'paginationUpcoming']);
 Route::get('/movie/top-rated', [MovieController::class, 'indexTopRated']);
 Route::post('/movie/top-rated', [MovieController::class, 'paginationTopRated']);
 
+Route::get('/movie/{slug}', [MovieController::class, 'show']);
+
 Route::get('/tv', [TvController::class, 'indexPopular']);
 Route::post('/tv', [TvController::class, 'paginationPopular']);
 
@@ -51,6 +53,5 @@ Route::get('/tv/top-rated', [TvController::class, 'indexTopRated']);
 Route::post('/tv/top-rated', [TvController::class, 'paginationTopRated']);
 
 Route::get('/person', [PersonController::class, 'index']);
-// Route::get('/person?page={id}', [PersonController::class, 'pagination']);
 
 require __DIR__ . '/auth.php';

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Str;
 
 class MovieController extends Controller
 {
@@ -63,9 +64,9 @@ class MovieController extends Controller
 
     public function movies($list_type, $page = 1)
     {
-        return Cache::remember($list_type . '-movies_' . $page, now()->addSeconds(3600), function () use ($list_type, $page) {
-            return Http::get('https://api.themoviedb.org/3/movie/' . $list_type . '?api_key=' . env('TMDB_API_KEY') . '&language=en-US' . ($page > 1 ? '&page=' . $page : ''));
-        });
+        // return Cache::remember($list_type . '-movies_' . $page, now()->addSeconds(60), function () use ($list_type, $page) {
+        return Http::get('https://api.themoviedb.org/3/movie/' . $list_type . '?api_key=' . env('TMDB_API_KEY') . '&language=en-US' . ($page > 1 ? '&page=' . $page : ''));
+        // });
     }
 
     /**
@@ -85,9 +86,16 @@ class MovieController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        //
+        $movie_id = explode('-', $slug)[0];
+        $movie = Http::get('https://api.themoviedb.org/3/movie/' . $movie_id . '?api_key=' . env('TMDB_API_KEY') . '&language=en-US');
+
+        if (is_numeric($slug)) {
+            return redirect('/movie/' . $slug . '-' . Str::slug($movie['original_title']));
+        }
+
+        return view('show.show', ['details' => $movie]);
     }
 
     /**

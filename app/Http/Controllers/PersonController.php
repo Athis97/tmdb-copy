@@ -18,16 +18,10 @@ class PersonController extends Controller
         return view('listview.person', ['persons' => $this->persons($page), 'page_heading' => 'Popular People']);
     }
 
-    public function pagination(Request $request)
-    {
-        // return view('listview.person', ['persons' => $this->persons($page)]);
-        return dd($request);
-    }
-
     public function persons($page = 1)
     {
-        // return Cache::remember('popular-persons_' . $page, now()->addSeconds(3600), function () use ($page) {
-        return Http::get('https://api.themoviedb.org/3/person/popular?api_key=' . env('TMDB_API_KEY') . '&language=en-US' . ($page > 1 ? '&page=' . $page : ''));
-        // });
+        return Cache::remember('popular-persons_' . $page, now()->addSeconds(60), function () use ($page) {
+            return Http::get('https://api.themoviedb.org/3/person/popular?api_key=' . env('TMDB_API_KEY') . '&language=en-US' . ($page > 1 ? '&page=' . $page : ''));
+        });
     }
 }
