@@ -63,7 +63,7 @@ class MovieController extends Controller
 
     public function movies($list_type, $page = 1)
     {
-        return Cache::remember($list_type . '-movies_' . $page, now()->addSeconds(2), function () use ($list_type, $page) {
+        return Cache::remember($list_type . '-movies_' . $page, now()->addSeconds(3600), function () use ($list_type, $page) {
             return Http::get('https://api.themoviedb.org/3/movie/' . $list_type . '?api_key=' . env('TMDB_API_KEY') . '&language=en-US' . ($page > 1 ? '&page=' . $page : ''));
         });
     }

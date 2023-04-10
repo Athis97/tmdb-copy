@@ -51,5 +51,6 @@ Route::get('/tv/top-rated', [TvController::class, 'indexTopRated']);
 Route::post('/tv/top-rated', [TvController::class, 'paginationTopRated']);
 
 Route::get('/person', [PersonController::class, 'index']);
+// Route::get('/person?page={id}', [PersonController::class, 'pagination']);
 
 require __DIR__ . '/auth.php';

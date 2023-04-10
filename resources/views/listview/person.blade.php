@@ -15,8 +15,8 @@
                             @endforeach
 
                             <script>
-                                let current_page = {{$persons['page']}};
-                                let total_pages = {{$persons['total_pages']}};
+                                let current_page = {{ $persons['page'] }};
+                                let total_pages = {{ $persons['total_pages'] }};
                             </script>
                             <div class="pagination_wrapper w-full flex justify-center">
                                 <div role="navigation" aria-label="Pagination"
