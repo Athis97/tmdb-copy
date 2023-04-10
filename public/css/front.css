@@ -443,3 +443,21 @@ body {
 header div.sub_media {
     max-width: 1400px;
 }
+
+.pagination_wrapper .pagination ul {
+    display: flex;
+    align-items: center;
+}
+
+.pagination_wrapper .pagination ul > li {
+    margin-left: 4px;
+    margin-right: 4px;
+    font-weight: 600;
+}
+
+.pagination_wrapper .pagination ul > li.active {
+    border: 1px solid #000;
+    padding: 2px 8px;
+    font-style: normal;
+    font-weight: 400;
+}

@@ -47,6 +47,7 @@
     <script src="{{ asset('js/jquery-3.6.4.min.js') }}"></script>
     <script src="{{ asset('js/easypiechart.min.js') }}"></script>
     <script src="{{ asset('js/jquery.easypiechart.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.simplePagination.js') }}"></script>
     <script src="{{ asset('js/front.js') }}"></script>
 </body>
 

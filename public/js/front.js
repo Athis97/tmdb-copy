@@ -31,4 +31,27 @@ $(document).ready(function() {
             }
         });
     });
+
+    $('.pagination_wrapper .pagination').pagination({
+        pages: total_pages,
+        currentPage: current_page,
+        ellipsePageSet: false,
+        prevText: '<a class="previous_page font-semibold mx-[4px]" href="/person?page=">← Previous</a>',
+        nextText: '<a class="next_page font-semibold mx-[4px]" href="/person?page=">Next →</a>',
+        onPageClick: function (page, evt) {
+            $.ajax({
+                type: 'POST',
+                url: $(location).attr('href'),
+                data: {
+                    "_token": csrf_token,
+                    "page": page,
+                },
+                success: function(data) {
+                    $('.results_profile_card .fifty_square').remove();
+                    $('.media_items').append(data);
+                    pieChart();
+                }
+            });
+        }
+    });
 });

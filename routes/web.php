@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MovieController;
+use App\Http\Controllers\PersonController;
 use App\Http\Controllers\TvController;
 
 /*
@@ -49,5 +50,6 @@ Route::post('/tv/on-the-air', [TvController::class, 'paginationOnTheAir']);
 Route::get('/tv/top-rated', [TvController::class, 'indexTopRated']);
 Route::post('/tv/top-rated', [TvController::class, 'paginationTopRated']);
 
+Route::get('/person', [PersonController::class, 'index']);
 
 require __DIR__ . '/auth.php';
