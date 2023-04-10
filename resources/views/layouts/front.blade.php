@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
 
 <head>
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ (!empty($page_heading ?? '') ? $page_heading . ' - ' : '') . 'The Movie Database (TMDB)' }}</title>
     <meta http-equiv="cleartype" content="on">
     <meta charset="utf-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -42,7 +42,7 @@
         {{-- @stack('modals') --}}
         {{-- @livewireScripts --}}
     </div>
-    
+
     <script src="{{ mix('js/app.js') }}" defer></script>
     <script src="{{ asset('js/jquery-3.6.4.min.js') }}"></script>
     <script src="{{ asset('js/easypiechart.min.js') }}"></script>

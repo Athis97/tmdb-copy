@@ -89,13 +89,13 @@ class MovieController extends Controller
     public function show($slug)
     {
         $movie_id = explode('-', $slug)[0];
-        $movie = Http::get('https://api.themoviedb.org/3/movie/' . $movie_id . '?api_key=' . env('TMDB_API_KEY') . '&language=en-US');
+        $movie =  Http::get('https://api.themoviedb.org/3/movie/' . $movie_id . '?api_key=' . env('TMDB_API_KEY') . '&language=en-US');
 
         if (is_numeric($slug)) {
             return redirect('/movie/' . $slug . '-' . Str::slug($movie['original_title']));
         }
 
-        return view('show.show', ['details' => $movie]);
+        return view('show.show', ['details' => $movie, 'page_heading' => $movie['original_title'] . ' (' . explode('-', $movie['release_date'])[0] . ')']);
     }
 
     /**

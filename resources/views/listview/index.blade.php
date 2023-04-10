@@ -1,4 +1,5 @@
 <x-front-layout>
+    <x-slot name="page_heading">{{ $page_heading }}</x-slot>
     <main id="main" class="smaller  subtle show_search_false">
         <section class="inner_content">
             <div id="media_v4" class="media discover">
@@ -15,7 +16,7 @@
                                 <div class="white_column no_pad pl-[30px]">
                                     <section id="media_results" class="panel results mt-[-30px]">
                                         <div class="media_items results">
-                                            <x-list-page-wrapper :movies=$movies :type=$type/>
+                                            <x-list-page-wrapper :movies=$movies :type=$type />
                                         </div>
                                     </section>
                                 </div>
