@@ -28,58 +28,9 @@
     <link rel="stylesheet" href="{{ asset('css/front.css') }}">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="{{ mix('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/jquery-3.6.4.min.js') }}"></script>
-    <script src="{{ asset('js/easypiechart.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.easypiechart.min.js') }}"></script>
     <script>
-        function pieChart() {
-            $('.user_score_chart').each(function() {
-                $(this).easyPieChart({
-                    lineCap: 'round',
-                    lineWidth: 2,
-                    scaleColor: false,
-                    size: 34,
-                    animate: {
-                        enabled: false
-                    }
-                });
-            });
-        }
-        $(document).ready(function() {
-            pieChart();
-            $('.media_items').on('click', 'div.pagination p.load_more a.load_more', function(e) {
-                var data_next_page = $(this).attr('data-next-page');
-                e.preventDefault();
-
-                $.ajax({
-                    type: 'POST',
-                    url: $(location).attr('href'),
-                    data: {
-                        "_token": "{{ csrf_token() }}",
-                        "data_next_page": data_next_page,
-                    },
-                    success: function(data) {
-                        $('.media_items div.pagination').remove();
-                        $('.media_items').append(data);
-                        pieChart();
-                    }
-                });
-            });
-        });
+        let csrf_token = "{{ csrf_token() }}";
     </script>
-
-    <style>
-        body {
-            font-family: "Source Sans Pro", Arial, sans-serif;
-        }
-
-        .glyphicons_v2:hover {
-            opacity: 1;
-            filter: brightness(0) saturate(100%) invert(53%) sepia(33%) saturate(3054%) hue-rotate(156deg) brightness(98%) contrast(99%);
-        }
-    </style>
-
     <!-- Scripts -->
 </head>
 
@@ -91,6 +42,12 @@
         {{-- @stack('modals') --}}
         {{-- @livewireScripts --}}
     </div>
+    
+    <script src="{{ mix('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/jquery-3.6.4.min.js') }}"></script>
+    <script src="{{ asset('js/easypiechart.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.easypiechart.min.js') }}"></script>
+    <script src="{{ asset('js/front.js') }}"></script>
 </body>
 
 </html>

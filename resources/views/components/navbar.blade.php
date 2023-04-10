@@ -1,6 +1,6 @@
 <header class="bg-[#032541] text-white">
-    <div class="content">
-        <div class="flex font-semibold justify-between px-[40px] py-[20px] sub_media">
+    <div class="content flex justify-center">
+        <div class="flex font-semibold justify-between px-[40px] py-[20px] sub_media w-full">
             <div class="flex nav_wrapper">
                 <a class="logo mr-5" href="/">
                     <img src="{{ asset('/images/logo.svg') }}" alt="The Movie Database (TMDB)" width="154"
