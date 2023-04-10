@@ -6,12 +6,12 @@
                 <div class="column_wrapper flex justify-center item-start">
                     <div class="content_wrapper px-[40px] py-[30px]">
                         <div class="title mb-4">
-                            <h2 class="font-semibold text-[1.4em]">Popular Movies</h2>
+                            <h2 class="font-semibold text-[1.4em]">{{ $page_heading }}</h2>
                         </div>
 
                         <div class="content flex">
-                            <x-side-bar/>
-                            
+                            <x-side-bar />
+
                             <div class="w-4/5">
                                 <div class="white_column no_pad pl-[30px]">
                                     <section id="media_results" class="panel results mt-[-30px]">

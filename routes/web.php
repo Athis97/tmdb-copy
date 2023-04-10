@@ -25,7 +25,16 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 Route::get('/movie', [MovieController::class, 'indexPopular']);
-Route::post('/movie', [MovieController::class, 'pagination']);
+Route::post('/movie', [MovieController::class, 'paginationPopular']);
+
+Route::get('/movie/now-playing', [MovieController::class, 'indexNowPlaying']);
+Route::post('/movie/now-playing', [MovieController::class, 'paginationNowPlaying']);
+
+Route::get('/movie/upcoming', [MovieController::class, 'indexUpcoming']);
+Route::post('/movie/upcoming', [MovieController::class, 'paginationUpcoming']);
+
+Route::get('/movie/top-rated', [MovieController::class, 'indexTopRated']);
+Route::post('/movie/top-rated', [MovieController::class, 'paginationTopRated']);
 
 
 require __DIR__ . '/auth.php';

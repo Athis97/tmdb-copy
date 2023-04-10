@@ -15,15 +15,50 @@ class MovieController extends Controller
      */
     public function indexPopular()
     {
-        return view('movie.index', ['movies' => $this->movies('popular')]);
+        return view('movie.index', ['movies' => $this->movies('popular'), 'page_heading' => 'Popular Movies']);
     }
 
-    public function pagination(Request $request)
+    public function paginationPopular(Request $request)
     {
-        return dd($request);
-        // if ($page = $request->data_next_page) {
-        //     return view('components.list-page-wrapper', ['movies' => $this->movies('popular', $page)]);
-        // }
+        if ($page = $request->data_next_page) {
+            return view('components.list-page-wrapper', ['movies' => $this->movies('popular', $page)]);
+        }
+    }
+
+    public function indexNowPlaying()
+    {
+        return view('movie.index', ['movies' => $this->movies('now_playing'), 'page_heading' => 'Now Playing Movies']);
+    }
+
+    public function paginationNowPlaying(Request $request)
+    {
+        if ($page = $request->data_next_page) {
+            return view('components.list-page-wrapper', ['movies' => $this->movies('now_playing', $page)]);
+        }
+    }
+
+    public function indexUpcoming()
+    {
+        return view('movie.index', ['movies' => $this->movies('upcoming'), 'page_heading' => 'Upcoming Movies']);
+    }
+
+    public function paginationUpcoming(Request $request)
+    {
+        if ($page = $request->data_next_page) {
+            return view('components.list-page-wrapper', ['movies' => $this->movies('upcoming', $page)]);
+        }
+    }
+
+    public function indexTopRated()
+    {
+        return view('movie.index', ['movies' => $this->movies('top_rated'), 'page_heading' => 'Top Rated Movies']);
+    }
+
+    public function paginationTopRated(Request $request)
+    {
+        if ($page = $request->data_next_page) {
+            return view('components.list-page-wrapper', ['movies' => $this->movies('top_rated', $page)]);
+        }
     }
 
     public function movies($list_type, $page = 1)
