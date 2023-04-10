@@ -24,7 +24,8 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/movie', [MovieController::class, 'index']);
+Route::get('/movie', [MovieController::class, 'indexPopular']);
 Route::post('/movie', [MovieController::class, 'pagination']);
+
 
 require __DIR__ . '/auth.php';

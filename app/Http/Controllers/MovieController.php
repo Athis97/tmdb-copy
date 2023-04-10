@@ -13,22 +13,23 @@ class MovieController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function indexPopular()
     {
-        return view('movie.index', ['movies' => $this->movies()]);
+        return view('movie.index', ['movies' => $this->movies('popular')]);
     }
 
     public function pagination(Request $request)
     {
-        if ($page = $request->data_next_page) {
-            return view('components.list-page-wrapper', ['movies' => $this->movies($page)]);
-        }
+        return dd($request);
+        // if ($page = $request->data_next_page) {
+        //     return view('components.list-page-wrapper', ['movies' => $this->movies('popular', $page)]);
+        // }
     }
 
-    public function movies($page = 1)
+    public function movies($list_type, $page = 1)
     {
-        return Cache::remember('popular-movies_' . $page, now()->addSeconds(2), function () use ($page) {
-            return Http::get('https://api.themoviedb.org/3/movie/popular?api_key=' . env('TMDB_API_KEY') . '&language=en-US' . ($page > 1 ? '&page=' . $page : ''));
+        return Cache::remember($list_type . '-movies_' . $page, now()->addSeconds(2), function () use ($list_type, $page) {
+            return Http::get('https://api.themoviedb.org/3/movie/' . $list_type . '?api_key=' . env('TMDB_API_KEY') . '&language=en-US' . ($page > 1 ? '&page=' . $page : ''));
         });
     }
 

@@ -4,15 +4,22 @@
         <x-slot name="name">Sort</x-slot>
         <div class="filter w-full border-t-[1px] border-[#eee] border-solid p-[14px_16px_16px_16px]">
             <h3 class="inline-flex items-center w-full text-[1em] font-[300] mb-[10px]">Sort Results By</h3>
-            <span title="" class="    " unselectable="on" role="listbox" aria-haspopup="listbox" aria-expanded="false"
-                tabindex="0" aria-owns="sort_by_listbox" aria-live="polite" aria-disabled="false"
-                aria-readonly="false" aria-busy="false" style=""
-                aria-activedescendant="o481c48d-7711-4fd4-987b-c69bdd314b0d"><span unselectable="on"
-                    class="-wrap k-state-default"><span id="o481c48d-7711-4fd4-987b-c69bdd314b0d" unselectable="on"
+            <span title=""
+                class="k-widget k-dropdown kendo_dropdown full_width font_size_1"
+                unselectable="on" role="listbox" aria-haspopup="listbox"
+                aria-expanded="false" tabindex="0" aria-owns="sort_by_listbox"
+                aria-live="polite" aria-disabled="false" aria-readonly="false"
+                aria-busy="false" style=""
+                aria-activedescendant="o481c48d-7711-4fd4-987b-c69bdd314b0d"><span
+                    unselectable="on" class="k-dropdown-wrap k-state-default"><span
+                        id="o481c48d-7711-4fd4-987b-c69bdd314b0d" unselectable="on"
                         role="option" aria-selected="true" class="k-input">Popularity
-                        Descending</span><span unselectable="on" class="k-select" aria-label="select"><span
-                            class="k-icon k-i-arrow-60-down"></span></span></span><select id="sort_by" name="sort_by"
-                    class="  " data-role="dropdownlist" style="display: none;">
+                        Descending</span><span unselectable="on" class="k-select"
+                        aria-label="select"><span
+                            class="k-icon k-i-arrow-60-down"></span></span></span><select
+                    id="sort_by" name="sort_by"
+                    class="kendo_dropdown full_width font_size_1" data-role="dropdownlist"
+                    style="display: none;">
                     <option value="popularity.desc" selected="selected">Popularity
                         Descending</option>
                     <option value="popularity.asc">Popularity Ascending</option>
@@ -32,75 +39,86 @@
         <x-slot name="name">Filters</x-slot>
 
         <div class="filter w-full border-t-[1px] border-[#eee] border-solid p-[14px_16px_16px_16px]">
-            <h3>Show Me<span class="tooltip glyphicons_v2 circle-question" data-tooltip-id="#show_me_tooltip"
-                    data-role="tooltip"></span>
+            <h3 class="inline-flex items-center w-full text-[1em] font-[300] mb-[10px]">Show Me<span class="tooltip glyphicons_v2 circle-question"
+                    data-tooltip-id="#show_me_tooltip" data-role="tooltip"></span>
             </h3>
 
             <label class="k-form-field">
-                <input id="show_me_everything" class="k-radio" type="radio" name="show_me" value="0"
-                    checked="checked">
+                <input id="show_me_everything" class="k-radio" type="radio" name="show_me"
+                    value="0" checked="checked">
                 <label for="show_me_everything" class="k-radio-label">Everything</label>
             </label>
 
             <label class="k-form-field">
-                <input id="show_me_not_seen" class="k-radio" type="radio" value="1" name="show_me"
-                    disabled="">
+                <input id="show_me_not_seen" class="k-radio" type="radio" value="1"
+                    name="show_me" disabled="">
                 <label for="show_me_not_seen" class="k-radio-label">Movies I
                     Haven't Seen</label>
             </label>
 
             <label class="k-form-field">
-                <input id="show_me_seen" class="k-radio" type="radio" value="2" name="show_me" disabled="">
+                <input id="show_me_seen" class="k-radio" type="radio" value="2"
+                    name="show_me" disabled="">
                 <label for="show_me_seen" class="k-radio-label">Movies I Have
                     Seen</label>
             </label>
         </div>
 
         <div class="filter w-full border-t-[1px] border-[#eee] border-solid p-[14px_16px_16px_16px]">
-            <h3>Availabilities</h3>
+            <h3 class="inline-flex items-center w-full text-[1em] font-[300] mb-[10px]">Availabilities</h3>
 
             <label class="k-form-field">
-                <input id="all_availabilities" class="k-checkbox" type="checkbox" name="all_availabilities"
-                    value="true" checked="">
+                <input id="all_availabilities" class="k-checkbox" type="checkbox"
+                    name="all_availabilities" value="true" checked="">
                 <label for="all_availabilities" class="k-checkbox-label">Search
                     all availabilities?</label>
             </label>
 
             <div id="availabilities_wrapper" class="labels hide">
                 <label class="k-form-field">
-                    <input id="ott_monetization_type_flatrate" class="k-checkbox" type="checkbox"
-                        name="ott_monetization_type" value="flatrate" checked="">
-                    <label for="ott_monetization_type_flatrate" class="k-checkbox-label">Stream</label>
+                    <input id="ott_monetization_type_flatrate" class="k-checkbox"
+                        type="checkbox" name="ott_monetization_type" value="flatrate"
+                        checked="">
+                    <label for="ott_monetization_type_flatrate"
+                        class="k-checkbox-label">Stream</label>
                 </label>
                 <label class="k-form-field">
-                    <input id="ott_monetization_type_free" class="k-checkbox" type="checkbox"
-                        name="ott_monetization_type" value="free" checked="">
-                    <label for="ott_monetization_type_free" class="k-checkbox-label">Free</label>
+                    <input id="ott_monetization_type_free" class="k-checkbox"
+                        type="checkbox" name="ott_monetization_type" value="free"
+                        checked="">
+                    <label for="ott_monetization_type_free"
+                        class="k-checkbox-label">Free</label>
                 </label>
                 <label class="k-form-field">
-                    <input id="ott_monetization_type_ads" class="k-checkbox" type="checkbox"
-                        name="ott_monetization_type" value="ads" checked="">
-                    <label for="ott_monetization_type_ads" class="k-checkbox-label">Ads</label>
+                    <input id="ott_monetization_type_ads" class="k-checkbox"
+                        type="checkbox" name="ott_monetization_type" value="ads"
+                        checked="">
+                    <label for="ott_monetization_type_ads"
+                        class="k-checkbox-label">Ads</label>
                 </label>
                 <label class="k-form-field">
-                    <input id="ott_monetization_type_rent" class="k-checkbox" type="checkbox"
-                        name="ott_monetization_type" value="rent" checked="">
-                    <label for="ott_monetization_type_rent" class="k-checkbox-label">Rent</label>
+                    <input id="ott_monetization_type_rent" class="k-checkbox"
+                        type="checkbox" name="ott_monetization_type" value="rent"
+                        checked="">
+                    <label for="ott_monetization_type_rent"
+                        class="k-checkbox-label">Rent</label>
                 </label>
                 <label class="k-form-field">
-                    <input id="ott_monetization_type_buy" class="k-checkbox" type="checkbox"
-                        name="ott_monetization_type" value="buy" checked="">
-                    <label for="ott_monetization_type_buy" class="k-checkbox-label">Buy</label>
+                    <input id="ott_monetization_type_buy" class="k-checkbox"
+                        type="checkbox" name="ott_monetization_type" value="buy"
+                        checked="">
+                    <label for="ott_monetization_type_buy"
+                        class="k-checkbox-label">Buy</label>
                 </label>
             </div>
         </div>
 
         <div class="filter w-full border-t-[1px] border-[#eee] border-solid p-[14px_16px_16px_16px]">
-            <h3>Release Dates</h3>
+            <h3 class="inline-flex items-center w-full text-[1em] font-[300] mb-[10px]">Release Dates</h3>
 
             <label class="k-form-field">
-                <input id="all_releases" class="k-checkbox" type="checkbox" name="all_releases" value="true"
-                    checked="">
+                <input id="all_releases" class="k-checkbox" type="checkbox"
+                    name="all_releases" value="true" checked="">
                 <label for="all_releases" class="k-checkbox-label">Search all
                     releases?</label>
             </label>
@@ -113,130 +131,170 @@
                         all countries?</label>
                 </label>
                 <div id="search_all_countries" class="hide">
-                    <span title="" class="   " unselectable="on" role="listbox" aria-haspopup="listbox"
-                        aria-expanded="false" tabindex="0" aria-owns="release_region_listbox" aria-live="polite"
+                    <span title=""
+                        class="k-widget k-dropdown font_size_1 kendo_dropdown"
+                        unselectable="on" role="listbox" aria-haspopup="listbox"
+                        aria-expanded="false" tabindex="0"
+                        aria-owns="release_region_listbox" aria-live="polite"
                         aria-disabled="false" aria-readonly="false" aria-busy="false"
                         aria-activedescendant="x3e0ed1e-9584-4385-a623-45b875adb738"
                         style="width: 100%; margin-bottom: 10px;"><span unselectable="on"
-                            class="-wrap k-state-default"><span id="x3e0ed1e-9584-4385-a623-45b875adb738"
-                                unselectable="on" role="option" aria-selected="true" class="k-input"><span
-                                    class="dropdown_flag"
+                            class="k-dropdown-wrap k-state-default"><span
+                                id="x3e0ed1e-9584-4385-a623-45b875adb738"
+                                unselectable="on" role="option" aria-selected="true"
+                                class="k-input"><span class="dropdown_flag"
                                     style="background-image: url('/assets/2/flags_v2/48/IN-5b73f4605171eaa60539e5d69a85bebe7b800f5ee6f94f24dafecaa0d47209fd.png')"></span><span>India</span></span><span
-                                unselectable="on" class="k-select" aria-label="select"><span
-                                    class="k-icon k-i-arrow-60-down"></span></span></span><input name="release_region"
-                            id="release_region" class=" "
-                            style="width: 100%; margin-bottom: 10px; display: none;" value="IN"
-                            data-role="dropdownlist"></span>
+                                unselectable="on" class="k-select"
+                                aria-label="select"><span
+                                    class="k-icon k-i-arrow-60-down"></span></span></span><input
+                            name="release_region" id="release_region"
+                            class="font_size_1 kendo_dropdown"
+                            style="width: 100%; margin-bottom: 10px; display: none;"
+                            value="IN" data-role="dropdownlist"></span>
                 </div>
 
                 <label class="k-form-field">
-                    <input id="release_type_1" class="k-checkbox" type="checkbox" name="release_type"
-                        value="1" checked="">
+                    <input id="release_type_1" class="k-checkbox" type="checkbox"
+                        name="release_type" value="1" checked="">
                     <label for="release_type_1" class="k-checkbox-label">Premiere</label>
                 </label>
                 <label class="k-form-field">
-                    <input id="release_type_2" class="k-checkbox" type="checkbox" name="release_type"
-                        value="2" checked="">
+                    <input id="release_type_2" class="k-checkbox" type="checkbox"
+                        name="release_type" value="2" checked="">
                     <label for="release_type_2" class="k-checkbox-label">Theatrical
                         (limited)</label>
                 </label>
                 <label class="k-form-field">
-                    <input id="release_type_3" class="k-checkbox" type="checkbox" name="release_type"
-                        value="3" checked="">
-                    <label for="release_type_3" class="k-checkbox-label">Theatrical</label>
+                    <input id="release_type_3" class="k-checkbox" type="checkbox"
+                        name="release_type" value="3" checked="">
+                    <label for="release_type_3"
+                        class="k-checkbox-label">Theatrical</label>
                 </label>
                 <label class="k-form-field">
-                    <input id="release_type_4" class="k-checkbox" type="checkbox" name="release_type"
-                        value="4" checked="">
+                    <input id="release_type_4" class="k-checkbox" type="checkbox"
+                        name="release_type" value="4" checked="">
                     <label for="release_type_4" class="k-checkbox-label">Digital</label>
                 </label>
                 <label class="k-form-field">
-                    <input id="release_type_5" class="k-checkbox" type="checkbox" name="release_type"
-                        value="5" checked="">
+                    <input id="release_type_5" class="k-checkbox" type="checkbox"
+                        name="release_type" value="5" checked="">
                     <label for="release_type_5" class="k-checkbox-label">Physical</label>
                 </label>
                 <label class="k-form-field">
-                    <input id="release_type_6" class="k-checkbox" type="checkbox" name="release_type"
-                        value="6" checked="">
+                    <input id="release_type_6" class="k-checkbox" type="checkbox"
+                        name="release_type" value="6" checked="">
                     <label for="release_type_6" class="k-checkbox-label">TV</label>
                 </label>
             </div>
 
             <div class="year_column">
-                <span class="col_1 ">from</span>
-                <span style="width: 100%;" class=" k-datepicker "><span class="k-picker-wrap k-state-default"><input
-                            id="release_date_gte" class=" k-input" value="" style="width: 100%"
-                            data-role="datepicker" type="text" role="combobox" aria-expanded="false"
-                            aria-owns="release_date_gte_dateview" autocomplete="off" aria-disabled="false"><span
-                            unselectable="on" class="k-select" aria-label="select" role="button"
+                <span class="col_1 font_size_1">from</span>
+                <span style="width: 100%;" class="k-widget k-datepicker font_size_1"><span
+                        class="k-picker-wrap k-state-default"><input id="release_date_gte"
+                            class="font_size_1 k-input" value=""
+                            style="width: 100%" data-role="datepicker" type="text"
+                            role="combobox" aria-expanded="false"
+                            aria-owns="release_date_gte_dateview" autocomplete="off"
+                            aria-disabled="false"><span unselectable="on"
+                            class="k-select" aria-label="select" role="button"
                             aria-controls="release_date_gte_dateview"><span
                                 class="k-icon k-i-calendar"></span></span></span></span>
             </div>
 
             <div class="year_column">
-                <span class="col_1 ">to</span>
-                <span class=" k-datepicker " style="width: 100%;"><span class="k-picker-wrap k-state-default"><input
-                            id="release_date_lte" class=" k-input" value="2023-09-22" style="width: 100%"
-                            data-role="datepicker" type="text" role="combobox" aria-expanded="false"
-                            aria-owns="release_date_lte_dateview" autocomplete="off" aria-disabled="false"><span
-                            unselectable="on" class="k-select" aria-label="select" role="button"
+                <span class="col_1 font_size_1">to</span>
+                <span class="k-widget k-datepicker font_size_1" style="width: 100%;"><span
+                        class="k-picker-wrap k-state-default"><input id="release_date_lte"
+                            class="font_size_1 k-input" value="2023-09-22"
+                            style="width: 100%" data-role="datepicker" type="text"
+                            role="combobox" aria-expanded="false"
+                            aria-owns="release_date_lte_dateview" autocomplete="off"
+                            aria-disabled="false"><span unselectable="on"
+                            class="k-select" aria-label="select" role="button"
                             aria-controls="release_date_lte_dateview"><span
                                 class="k-icon k-i-calendar"></span></span></span></span>
             </div>
         </div>
 
         <div class="filter w-full border-t-[1px] border-[#eee] border-solid p-[14px_16px_16px_16px]">
-            <h3>Genres</h3>
+            <h3 class="inline-flex items-center w-full text-[1em] font-[300] mb-[10px]">Genres</h3>
             <ul id="with_genres" class="multi_select text" name="with_genres[]">
-                <li data-value="28"><a class="no_click" href="/discover/movie?with_genres=28">Action</a></li>
-                <li data-value="12"><a class="no_click" href="/discover/movie?with_genres=12">Adventure</a></li>
-                <li data-value="16"><a class="no_click" href="/discover/movie?with_genres=16">Animation</a></li>
-                <li data-value="35"><a class="no_click" href="/discover/movie?with_genres=35">Comedy</a></li>
-                <li data-value="80"><a class="no_click" href="/discover/movie?with_genres=80">Crime</a></li>
-                <li data-value="99"><a class="no_click" href="/discover/movie?with_genres=99">Documentary</a></li>
-                <li data-value="18"><a class="no_click" href="/discover/movie?with_genres=18">Drama</a></li>
-                <li data-value="10751"><a class="no_click" href="/discover/movie?with_genres=10751">Family</a></li>
-                <li data-value="14"><a class="no_click" href="/discover/movie?with_genres=14">Fantasy</a></li>
-                <li data-value="36"><a class="no_click" href="/discover/movie?with_genres=36">History</a></li>
-                <li data-value="27"><a class="no_click" href="/discover/movie?with_genres=27">Horror</a></li>
-                <li data-value="10402"><a class="no_click" href="/discover/movie?with_genres=10402">Music</a></li>
-                <li data-value="9648"><a class="no_click" href="/discover/movie?with_genres=9648">Mystery</a></li>
-                <li data-value="10749"><a class="no_click" href="/discover/movie?with_genres=10749">Romance</a></li>
-                <li data-value="878"><a class="no_click" href="/discover/movie?with_genres=878">Science Fiction</a>
+                <li data-value="28"><a class="no_click"
+                        href="/discover/movie?with_genres=28">Action</a></li>
+                <li data-value="12"><a class="no_click"
+                        href="/discover/movie?with_genres=12">Adventure</a></li>
+                <li data-value="16"><a class="no_click"
+                        href="/discover/movie?with_genres=16">Animation</a></li>
+                <li data-value="35"><a class="no_click"
+                        href="/discover/movie?with_genres=35">Comedy</a></li>
+                <li data-value="80"><a class="no_click"
+                        href="/discover/movie?with_genres=80">Crime</a></li>
+                <li data-value="99"><a class="no_click"
+                        href="/discover/movie?with_genres=99">Documentary</a></li>
+                <li data-value="18"><a class="no_click"
+                        href="/discover/movie?with_genres=18">Drama</a></li>
+                <li data-value="10751"><a class="no_click"
+                        href="/discover/movie?with_genres=10751">Family</a></li>
+                <li data-value="14"><a class="no_click"
+                        href="/discover/movie?with_genres=14">Fantasy</a></li>
+                <li data-value="36"><a class="no_click"
+                        href="/discover/movie?with_genres=36">History</a></li>
+                <li data-value="27"><a class="no_click"
+                        href="/discover/movie?with_genres=27">Horror</a></li>
+                <li data-value="10402"><a class="no_click"
+                        href="/discover/movie?with_genres=10402">Music</a></li>
+                <li data-value="9648"><a class="no_click"
+                        href="/discover/movie?with_genres=9648">Mystery</a></li>
+                <li data-value="10749"><a class="no_click"
+                        href="/discover/movie?with_genres=10749">Romance</a></li>
+                <li data-value="878"><a class="no_click"
+                        href="/discover/movie?with_genres=878">Science Fiction</a>
                 </li>
-                <li data-value="10770"><a class="no_click" href="/discover/movie?with_genres=10770">TV Movie</a></li>
-                <li data-value="53"><a class="no_click" href="/discover/movie?with_genres=53">Thriller</a></li>
-                <li data-value="10752"><a class="no_click" href="/discover/movie?with_genres=10752">War</a></li>
-                <li data-value="37"><a class="no_click" href="/discover/movie?with_genres=37">Western</a></li>
+                <li data-value="10770"><a class="no_click"
+                        href="/discover/movie?with_genres=10770">TV Movie</a></li>
+                <li data-value="53"><a class="no_click"
+                        href="/discover/movie?with_genres=53">Thriller</a></li>
+                <li data-value="10752"><a class="no_click"
+                        href="/discover/movie?with_genres=10752">War</a></li>
+                <li data-value="37"><a class="no_click"
+                        href="/discover/movie?with_genres=37">Western</a></li>
             </ul>
         </div>
 
         <div class="filter w-full border-t-[1px] border-[#eee] border-solid p-[14px_16px_16px_16px]">
-            <h3>Certification</h3>
+            <h3 class="inline-flex items-center w-full text-[1em] font-[300] mb-[10px]">Certification</h3>
             <ul id="certification" class="multi_select text" name="certification[]">
-                <li data-value="U"><a class="no_click" href="/discover/movie?certification=U">U</a></li>
-                <li data-value="UA"><a class="no_click" href="/discover/movie?certification=UA">UA</a></li>
-                <li data-value="A"><a class="no_click" href="/discover/movie?certification=A">A</a></li>
+                <li data-value="U"><a class="no_click"
+                        href="/discover/movie?certification=U">U</a></li>
+                <li data-value="UA"><a class="no_click"
+                        href="/discover/movie?certification=UA">UA</a></li>
+                <li data-value="A"><a class="no_click"
+                        href="/discover/movie?certification=A">A</a></li>
             </ul>
         </div>
 
 
         <div class="filter w-full border-t-[1px] border-[#eee] border-solid p-[14px_16px_16px_16px]">
-            <h3>Language <span class="tooltip glyphicons_v2 circle-question" data-tooltip-id="#language_tooltip"
-                    data-role="tooltip"></span>
+            <h3 class="inline-flex items-center w-full text-[1em] font-[300] mb-[10px]">Language <span class="tooltip glyphicons_v2 circle-question"
+                    data-tooltip-id="#language_tooltip" data-role="tooltip"></span>
             </h3>
-            <span title="" class="   " unselectable="on" role="listbox" aria-haspopup="listbox"
-                aria-expanded="false" tabindex="0" aria-owns="language_listbox" aria-live="polite"
-                aria-disabled="false" aria-readonly="false" aria-busy="false" style=""
-                aria-activedescendant="tecf4d13-c2d1-4973-82d0-fc25b8ebb9f2"><span unselectable="on"
-                    class="-wrap k-state-default"><span id="tecf4d13-c2d1-4973-82d0-fc25b8ebb9f2" unselectable="on"
+            <span title="" class="k-widget k-dropdown full_width font_size_1"
+                unselectable="on" role="listbox" aria-haspopup="listbox"
+                aria-expanded="false" tabindex="0" aria-owns="language_listbox"
+                aria-live="polite" aria-disabled="false" aria-readonly="false"
+                aria-busy="false" style=""
+                aria-activedescendant="tecf4d13-c2d1-4973-82d0-fc25b8ebb9f2"><span
+                    unselectable="on" class="k-dropdown-wrap k-state-default"><span
+                        id="tecf4d13-c2d1-4973-82d0-fc25b8ebb9f2" unselectable="on"
                         role="option" aria-selected="true" class="k-input">
 
                         None Selected
 
-                    </span><span unselectable="on" class="k-select" aria-label="select"><span
-                            class="k-icon k-i-arrow-60-down"></span></span></span><select id="language"
-                    name="language" class=" " data-role="dropdownlist" style="display: none;">
+                    </span><span unselectable="on" class="k-select"
+                        aria-label="select"><span
+                            class="k-icon k-i-arrow-60-down"></span></span></span><select
+                    id="language" name="language" class="full_width font_size_1"
+                    data-role="dropdownlist" style="display: none;">
                     <option value="" selected="selected">None Selected
                     </option>
                     <option value="en">English</option>
@@ -417,45 +475,51 @@
         </div>
 
         <div class="filter w-full border-t-[1px] border-[#eee] border-solid p-[14px_16px_16px_16px]">
-            <h3>User Score</h3>
-            <div id="user_score_range" class=" range">
+            <h3 class="inline-flex items-center w-full text-[1em] font-[300] mb-[10px]">User Score</h3>
+            <div id="user_score_range" class="full_width range">
                 <input id="vote_average_gte" name="vote_average.gte" value="0">
                 <input id="vote_average_lte" name="vote_average.lte" value="10">
             </div>
         </div>
 
         <div class="filter w-full border-t-[1px] border-[#eee] border-solid p-[14px_16px_16px_16px]">
-            <h3>Minimum User Votes</h3>
-            <div id="user_vote_range" class=" range">
+            <h3 class="inline-flex items-center w-full text-[1em] font-[300] mb-[10px]">Minimum User Votes</h3>
+            <div id="user_vote_range" class="full_width range">
                 <input value="0">
                 <input value="250">
             </div>
         </div>
 
         <div class="filter w-full border-t-[1px] border-[#eee] border-solid p-[14px_16px_16px_16px]">
-            <h3>Runtime</h3>
-            <div id="runtime_range" class=" range">
+            <h3 class="inline-flex items-center w-full text-[1em] font-[300] mb-[10px]">Runtime</h3>
+            <div id="runtime_range" class="full_width range">
                 <input id="with_runtime_gte" name="with_runtime.gte" value="0">
                 <input id="with_runtime_lte" name="with_runtime.lte" value="400">
             </div>
         </div>
 
         <div class="filter w-full border-t-[1px] border-[#eee] border-solid p-[14px_16px_16px_16px]">
-            <h3>Keywords</h3>
-            <div class=" k-multiselect   k-multiselect-clearable" unselectable="on" title="" style="">
-                <div class="k-multiselect-wrap k-floatwrap" unselectable="on" role="listbox">
+            <h3 class="inline-flex items-center w-full text-[1em] font-[300] mb-[10px]">Keywords</h3>
+            <div class="k-widget k-multiselect full_width font_size_1 k-multiselect-clearable"
+                unselectable="on" title="" style="">
+                <div class="k-multiselect-wrap k-floatwrap" unselectable="on"
+                    role="listbox">
                     <ul unselectable="on" class="k-reset" id="with_keywords_taglist">
-                    </ul><input class="k-input k-readonly" style="width: 169.062px;" accesskey=""
-                        autocomplete="off" role="textbox" title="" aria-expanded="false"
-                        aria-haspopup="listbox" aria-autocomplete="list" tabindex="0"
-                        aria-describedby="with_keywords_taglist" aria-disabled="false" aria-readonly="false"><span
-                        unselectable="on" class="k-clear-value k-hidden" title="clear" role="button"
+                    </ul><input class="k-input k-readonly" style="width: 169.062px;"
+                        accesskey="" autocomplete="off" role="textbox" title=""
+                        aria-expanded="false" aria-haspopup="listbox"
+                        aria-autocomplete="list" tabindex="0"
+                        aria-describedby="with_keywords_taglist" aria-disabled="false"
+                        aria-readonly="false"><span unselectable="on"
+                        class="k-clear-value k-hidden" title="clear" role="button"
                         tabindex="-1"><span class="k-icon k-i-x"></span></span><span
                         class="k-icon k-i-loading k-hidden"></span><span
                         style="font-family: &quot;Source Sans Pro&quot;, Arial, sans-serif; font-size: 14.4px; font-stretch: 100%; font-style: normal; font-weight: 400; letter-spacing: normal; text-transform: none; line-height: 21.6px; position: absolute; visibility: hidden; top: -3333px; left: -3333px;">Filter
                         by keywords...</span>
-                </div><select id="with_keywords" name="with_keywords[]" multiple="multiple" class=" "
-                    data-role="multiselect" aria-disabled="false" aria-readonly="false" style="display: none;">
+                </div><select id="with_keywords" name="with_keywords[]"
+                    multiple="multiple" class="full_width font_size_1"
+                    data-role="multiselect" aria-disabled="false" aria-readonly="false"
+                    style="display: none;">
                 </select>
             </div>
         </div>
@@ -464,463 +528,477 @@
     <x-filter-panel>
         <x-slot name="name">Where To Watch</x-slot>
         <div class="filter w-full border-t-[1px] border-[#eee] border-solid p-[14px_16px_16px_16px]">
-            <h3>My Services <span class="tooltip glyphicons_v2 circle-question" data-tooltip-id="#ott_tooltip"
-                    data-role="tooltip"></span>
+            <h3 class="inline-flex items-center w-full text-[1em] font-[300] mb-[10px]">My Services <span class="tooltip glyphicons_v2 circle-question"
+                    data-tooltip-id="#ott_tooltip" data-role="tooltip"></span>
             </h3>
             <label class="k-form-field">
-                <input id="my_services" class="k-checkbox" type="checkbox" name="my_services" value="true"
-                    disabled="">
+                <input id="my_services" class="k-checkbox" type="checkbox"
+                    name="my_services" value="true" disabled="">
                 <label for="my_services" class="k-checkbox-label">Restrict
                     searches to my subscribed services?</label>
             </label>
         </div>
 
         <div class="filter w-full border-t-[1px] border-[#eee] border-solid p-[14px_16px_16px_16px]">
-            <h3>Country</h3>
-            <span title="" class="   " unselectable="on" role="listbox" aria-haspopup="listbox"
-                aria-expanded="false" tabindex="0" aria-owns="ott_region_listbox" aria-live="polite"
-                aria-disabled="false" aria-readonly="false" aria-busy="false"
-                aria-activedescendant="u51022ff-74cc-4746-9ba5-5d5d3f4423ff" style="width: 100%;"><span
-                    unselectable="on" class="-wrap k-state-default"><span id="u51022ff-74cc-4746-9ba5-5d5d3f4423ff"
-                        unselectable="on" role="option" aria-selected="true" class="k-input"><span
+            <h3 class="inline-flex items-center w-full text-[1em] font-[300] mb-[10px]">Country</h3>
+            <span title="" class="k-widget k-dropdown font_size_1 kendo_dropdown"
+                unselectable="on" role="listbox" aria-haspopup="listbox"
+                aria-expanded="false" tabindex="0" aria-owns="ott_region_listbox"
+                aria-live="polite" aria-disabled="false" aria-readonly="false"
+                aria-busy="false"
+                aria-activedescendant="u51022ff-74cc-4746-9ba5-5d5d3f4423ff"
+                style="width: 100%;"><span unselectable="on"
+                    class="k-dropdown-wrap k-state-default"><span
+                        id="u51022ff-74cc-4746-9ba5-5d5d3f4423ff" unselectable="on"
+                        role="option" aria-selected="true" class="k-input"><span
                             class="dropdown_flag"
                             style="background-image: url('/assets/2/flags_v2/48/IN-5b73f4605171eaa60539e5d69a85bebe7b800f5ee6f94f24dafecaa0d47209fd.png')"></span><span>India</span></span><span
                         unselectable="on" class="k-select" aria-label="select"><span
                             class="k-icon k-i-arrow-60-down"></span></span></span>
-                <div id="ott_region" class=" " style="width: 100%; display: none;" data-role="dropdownlist">
+                <div id="ott_region" class="font_size_1 kendo_dropdown"
+                    style="width: 100%; display: none;" data-role="dropdownlist">
                 </div>
             </span>
 
             <span id="ott_provider_wrapper">
-                <ul id="ott_providers" class="ott_providers multi_select image" style="margin-bottom: 0;">
+                <ul id="ott_providers" class="ott_providers multi_select image"
+                    style="margin-bottom: 0;">
                     <li data-value="8" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Netflix">
-                            <img src="{{ asset('images/ott/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg') }}" width="50"
-                                height="50" alt="Netflix">
+                            <img src="{{ asset('images/ott/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg') }}"
+                                width="50" height="50" alt="Netflix">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="119" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Amazon Prime Video">
-                            <img src="{{ asset('images/ott/emthp39XA2YScoYL1p0sdbAH2WA.jpg') }}" width="50"
-                                height="50" alt="Amazon Prime Video">
+                            <img src="{{ asset('images/ott/emthp39XA2YScoYL1p0sdbAH2WA.jpg') }}"
+                                width="50" height="50" alt="Amazon Prime Video">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="122" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Hotstar">
-                            <img src="{{ asset('images/ott/7Fl8ylPDclt3ZYgNbW2t7rbZE9I.jpg') }}" width="50"
-                                height="50" alt="Hotstar">
+                            <img src="{{ asset('images/ott/7Fl8ylPDclt3ZYgNbW2t7rbZE9I.jpg') }}"
+                                width="50" height="50" alt="Hotstar">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="121" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Voot">
-                            <img src="{{ asset('images/ott/2u1uElmpm4lProS7C9RYcaYLYt1.jpg') }}" width="50"
-                                height="50" alt="Voot">
+                            <img src="{{ asset('images/ott/2u1uElmpm4lProS7C9RYcaYLYt1.jpg') }}"
+                                width="50" height="50" alt="Voot">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="220" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Jio Cinema">
-                            <img src="{{ asset('images/ott/jRpQbuHbGR0MzSIBxJjxZxpXhqC.jpg') }}" width="50"
-                                height="50" alt="Jio Cinema">
+                            <img src="{{ asset('images/ott/jRpQbuHbGR0MzSIBxJjxZxpXhqC.jpg') }}"
+                                width="50" height="50" alt="Jio Cinema">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="232" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Zee5">
-                            <img src="{{ asset('images/ott/ajbCmwvZ8HiePHZaOVEgm9MzyuA.jpg') }}" width="50"
-                                height="50" alt="Zee5">
+                            <img src="{{ asset('images/ott/ajbCmwvZ8HiePHZaOVEgm9MzyuA.jpg') }}"
+                                width="50" height="50" alt="Zee5">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="350" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Apple TV Plus">
-                            <img src="{{ asset('images/ott/6uhKBfmtzFqOcLousHwZuzcrScK.jpg') }}" width="50"
-                                height="50" alt="Apple TV Plus">
+                            <img src="{{ asset('images/ott/6uhKBfmtzFqOcLousHwZuzcrScK.jpg') }}"
+                                width="50" height="50" alt="Apple TV Plus">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="2" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Apple TV">
-                            <img src="{{ asset('images/ott/peURlLlr8jggOwK53fJ5wdQl05y.jpg') }}" width="50"
-                                height="50" alt="Apple TV">
+                            <img src="{{ asset('images/ott/peURlLlr8jggOwK53fJ5wdQl05y.jpg') }}"
+                                width="50" height="50" alt="Apple TV">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="218" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Eros Now">
-                            <img src="{{ asset('images/ott/4XYI2rzRm34skcvamytegQx7Dmu.jpg') }}" width="50"
-                                height="50" alt="Eros Now">
+                            <img src="{{ asset('images/ott/4XYI2rzRm34skcvamytegQx7Dmu.jpg') }}"
+                                width="50" height="50" alt="Eros Now">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="3" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Google Play Movies">
-                            <img src="{{ asset('images/ott/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg') }}" width="50"
-                                height="50" alt="Google Play Movies">
+                            <img src="{{ asset('images/ott/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg') }}"
+                                width="50" height="50" alt="Google Play Movies">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="11" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="MUBI">
-                            <img src="{{ asset('images/ott/bVR4Z1LCHY7gidXAJF5pMa4QrDS.jpg') }}" width="50"
-                                height="50" alt="MUBI">
+                            <img src="{{ asset('images/ott/bVR4Z1LCHY7gidXAJF5pMa4QrDS.jpg') }}"
+                                width="50" height="50" alt="MUBI">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="237" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Sony Liv">
-                            <img src="{{ asset('images/ott/odTur9CmVtzsRUAZ9910tPM4XwL.jpg') }}" width="50"
-                                height="50" alt="Sony Liv">
+                            <img src="{{ asset('images/ott/odTur9CmVtzsRUAZ9910tPM4XwL.jpg') }}"
+                                width="50" height="50" alt="Sony Liv">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="192" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="YouTube">
-                            <img src="{{ asset('images/ott/oIkQkEkwfmcG7IGpRR1NB8frZZM.jpg') }}" width="50"
-                                height="50" alt="YouTube">
+                            <img src="{{ asset('images/ott/oIkQkEkwfmcG7IGpRR1NB8frZZM.jpg') }}"
+                                width="50" height="50" alt="YouTube">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="100" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="GuideDoc">
-                            <img src="{{ asset('images/ott/iX0pvJ2GFATbVIH5IHMwG0ffIdV.jpg') }}" width="50"
-                                height="50" alt="GuideDoc">
+                            <img src="{{ asset('images/ott/iX0pvJ2GFATbVIH5IHMwG0ffIdV.jpg') }}"
+                                width="50" height="50" alt="GuideDoc">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="175" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Netflix Kids">
-                            <img src="{{ asset('images/ott/j2OLGxyy0gKbPVI0DYFI2hJxP6y.jpg') }}" width="50"
-                                height="50" alt="Netflix Kids">
+                            <img src="{{ asset('images/ott/j2OLGxyy0gKbPVI0DYFI2hJxP6y.jpg') }}"
+                                width="50" height="50" alt="Netflix Kids">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="73" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Tubi TV">
-                            <img src="{{ asset('images/ott/w2TDH9TRI7pltf5LjN3vXzs7QbN.jpg') }}" width="50"
-                                height="50" alt="Tubi TV">
+                            <img src="{{ asset('images/ott/w2TDH9TRI7pltf5LjN3vXzs7QbN.jpg') }}"
+                                width="50" height="50" alt="Tubi TV">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="255" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Yupp TV">
-                            <img src="{{ asset('images/ott/8qNJcPBHZ4qewHrDJ7C7s2DBQ3V.jpg') }}" width="50"
-                                height="50" alt="Yupp TV">
+                            <img src="{{ asset('images/ott/8qNJcPBHZ4qewHrDJ7C7s2DBQ3V.jpg') }}"
+                                width="50" height="50" alt="Yupp TV">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="309" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Sun Nxt">
-                            <img src="{{ asset('images/ott/uW4dPCcbXaaFTyfL5HwhuDt5akK.jpg') }}" width="50"
-                                height="50" alt="Sun Nxt">
+                            <img src="{{ asset('images/ott/uW4dPCcbXaaFTyfL5HwhuDt5akK.jpg') }}"
+                                width="50" height="50" alt="Sun Nxt">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="315" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Hoichoi">
-                            <img src="{{ asset('images/ott/d4vHcXY9rwnr763wQns2XJThclt.jpg') }}" width="50"
-                                height="50" alt="Hoichoi">
+                            <img src="{{ asset('images/ott/d4vHcXY9rwnr763wQns2XJThclt.jpg') }}"
+                                width="50" height="50" alt="Hoichoi">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="319" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Alt Balaji">
-                            <img src="{{ asset('images/ott/xiqTOBxOnlMy1nvppZcFhCDsP0f.jpg') }}" width="50"
-                                height="50" alt="Alt Balaji">
+                            <img src="{{ asset('images/ott/xiqTOBxOnlMy1nvppZcFhCDsP0f.jpg') }}"
+                                width="50" height="50" alt="Alt Balaji">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="437" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Hungama Play">
-                            <img src="{{ asset('images/ott/4QEQsvCBnORNIg9EDnrRSiEw61D.jpg') }}" width="50"
-                                height="50" alt="Hungama Play">
+                            <img src="{{ asset('images/ott/4QEQsvCBnORNIg9EDnrRSiEw61D.jpg') }}"
+                                width="50" height="50" alt="Hungama Play">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="190" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Curiosity Stream">
-                            <img src="{{ asset('images/ott/67Ee4E6qOkQGHeUTArdJ1qRxzR2.jpg') }}" width="50"
-                                height="50" alt="Curiosity Stream">
+                            <img src="{{ asset('images/ott/67Ee4E6qOkQGHeUTArdJ1qRxzR2.jpg') }}"
+                                width="50" height="50" alt="Curiosity Stream">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="476" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="EPIC ON">
-                            <img src="{{ asset('images/ott/q03pok7xSxYJaENuYs547qa6upY.jpg') }}" width="50"
-                                height="50" alt="EPIC ON">
+                            <img src="{{ asset('images/ott/q03pok7xSxYJaENuYs547qa6upY.jpg') }}"
+                                width="50" height="50" alt="EPIC ON">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="474" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="ShemarooMe">
-                            <img src="{{ asset('images/ott/vIhSFgmp0HXZbUHDscuhpU6S2Z6.jpg') }}" width="50"
-                                height="50" alt="ShemarooMe">
+                            <img src="{{ asset('images/ott/vIhSFgmp0HXZbUHDscuhpU6S2Z6.jpg') }}"
+                                width="50" height="50" alt="ShemarooMe">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="500" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="TVF Play">
-                            <img src="{{ asset('images/ott/8ugSQ1g7E8fXFnKFT5G8XOMcmS0.jpg') }}" width="50"
-                                height="50" alt="TVF Play">
+                            <img src="{{ asset('images/ott/8ugSQ1g7E8fXFnKFT5G8XOMcmS0.jpg') }}"
+                                width="50" height="50" alt="TVF Play">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="502" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Tata Play">
-                            <img src="{{ asset('images/ott/qLR6qzB1IcANZUqMEkLf6Sh8Y8s.jpg') }}" width="50"
-                                height="50" alt="Tata Play">
+                            <img src="{{ asset('images/ott/qLR6qzB1IcANZUqMEkLf6Sh8Y8s.jpg') }}"
+                                width="50" height="50" alt="Tata Play">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="510" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Discovery Plus">
-                            <img src="{{ asset('images/ott/wYRiUqIgWcfUvO6OPcXuUNd4tc2.jpg') }}" width="50"
-                                height="50" alt="Discovery Plus">
+                            <img src="{{ asset('images/ott/wYRiUqIgWcfUvO6OPcXuUNd4tc2.jpg') }}"
+                                width="50" height="50" alt="Discovery Plus">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="482" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="ManoramaMax">
-                            <img src="{{ asset('images/ott/iRv3wbUEPuwYYPSKwUxPaMPKGM4.jpg') }}" width="50"
-                                height="50" alt="ManoramaMax">
+                            <img src="{{ asset('images/ott/iRv3wbUEPuwYYPSKwUxPaMPKGM4.jpg') }}"
+                                width="50" height="50" alt="ManoramaMax">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="471" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="FILMRISE">
-                            <img src="{{ asset('images/ott/mEiBVz62M9j3TCebmOspMfqkIn.jpg') }}" width="50"
-                                height="50" alt="FILMRISE">
+                            <img src="{{ asset('images/ott/mEiBVz62M9j3TCebmOspMfqkIn.jpg') }}"
+                                width="50" height="50" alt="FILMRISE">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="515" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="MX Player">
-                            <img src="{{ asset('images/ott/dH4BZucVyb5lW97TEbZ7RTAugjg.jpg') }}" width="50"
-                                height="50" alt="MX Player">
+                            <img src="{{ asset('images/ott/dH4BZucVyb5lW97TEbZ7RTAugjg.jpg') }}"
+                                width="50" height="50" alt="MX Player">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="521" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Spamflix">
-                            <img src="{{ asset('images/ott/xN97FFkFAdY1JvHhS4zyPD4URgD.jpg') }}" width="50"
-                                height="50" alt="Spamflix">
+                            <img src="{{ asset('images/ott/xN97FFkFAdY1JvHhS4zyPD4URgD.jpg') }}"
+                                width="50" height="50" alt="Spamflix">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="532" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="aha">
-                            <img src="{{ asset('images/ott/m3NWxxR23l1w1e156fyTuw931gx.jpg') }}" width="50"
-                                height="50" alt="aha">
+                            <img src="{{ asset('images/ott/m3NWxxR23l1w1e156fyTuw931gx.jpg') }}"
+                                width="50" height="50" alt="aha">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="545" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Spuul">
-                            <img src="{{ asset('images/ott/iJGVfWTDddgipZ7mJCCEYzmRYrP.jpg') }}" width="50"
-                                height="50" alt="Spuul">
+                            <img src="{{ asset('images/ott/iJGVfWTDddgipZ7mJCCEYzmRYrP.jpg') }}"
+                                width="50" height="50" alt="Spuul">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="538" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Plex">
-                            <img src="{{ asset('images/ott/wDWvnupneMbY6RhBTHQC9zU0SCX.jpg') }}" width="50"
-                                height="50" alt="Plex">
+                            <img src="{{ asset('images/ott/wDWvnupneMbY6RhBTHQC9zU0SCX.jpg') }}"
+                                width="50" height="50" alt="Plex">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="546" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="WOW Presents Plus">
-                            <img src="{{ asset('images/ott/mgD0T960hnYU4gBxbPPBrcDfgWg.jpg') }}" width="50"
-                                height="50" alt="WOW Presents Plus">
+                            <img src="{{ asset('images/ott/mgD0T960hnYU4gBxbPPBrcDfgWg.jpg') }}"
+                                width="50" height="50" alt="WOW Presents Plus">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="551" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Magellan TV">
-                            <img src="{{ asset('images/ott/gekkP93StjYdiMAInViVmrnldNY.jpg') }}" width="50"
-                                height="50" alt="Magellan TV">
+                            <img src="{{ asset('images/ott/gekkP93StjYdiMAInViVmrnldNY.jpg') }}"
+                                width="50" height="50" alt="Magellan TV">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="554" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="BroadwayHD">
-                            <img src="{{ asset('images/ott/xLu1rkZNOKuNnRNr70wySosfTBf.jpg') }}" width="50"
-                                height="50" alt="BroadwayHD">
+                            <img src="{{ asset('images/ott/xLu1rkZNOKuNnRNr70wySosfTBf.jpg') }}"
+                                width="50" height="50" alt="BroadwayHD">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="559" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Filmzie">
-                            <img src="{{ asset('images/ott/olmH7t5tEng8Yuq33KmvpvaaVIg.jpg') }}" width="50"
-                                height="50" alt="Filmzie">
+                            <img src="{{ asset('images/ott/olmH7t5tEng8Yuq33KmvpvaaVIg.jpg') }}"
+                                width="50" height="50" alt="Filmzie">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="561" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Lionsgate Play">
-                            <img src="{{ asset('images/ott/vrFpju3t7kplDbFsN5GLJpG0obj.jpg') }}" width="50"
-                                height="50" alt="Lionsgate Play">
+                            <img src="{{ asset('images/ott/vrFpju3t7kplDbFsN5GLJpG0obj.jpg') }}"
+                                width="50" height="50" alt="Lionsgate Play">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="562" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="MovieSaints">
-                            <img src="{{ asset('images/ott/fdWE8jpmQqkZrwg2ZMuCLz6ms5P.jpg') }}" width="50"
-                                height="50" alt="MovieSaints">
+                            <img src="{{ asset('images/ott/fdWE8jpmQqkZrwg2ZMuCLz6ms5P.jpg') }}"
+                                width="50" height="50" alt="MovieSaints">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="444" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Dekkoo">
-                            <img src="{{ asset('images/ott/u2H29LCxRzjZVUoZUQAHKm5P8Zc.jpg') }}" width="50"
-                                height="50" alt="Dekkoo">
+                            <img src="{{ asset('images/ott/u2H29LCxRzjZVUoZUQAHKm5P8Zc.jpg') }}"
+                                width="50" height="50" alt="Dekkoo">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="567" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="True Story">
-                            <img src="{{ asset('images/ott/osREemsc9uUB2J8VTkQeAVk2fu9.jpg') }}" width="50"
-                                height="50" alt="True Story">
+                            <img src="{{ asset('images/ott/osREemsc9uUB2J8VTkQeAVk2fu9.jpg') }}"
+                                width="50" height="50" alt="True Story">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="569" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="DocAlliance Films">
-                            <img src="{{ asset('images/ott/aQ1ritN00jXc7RAFfUoQKGAAfp7.jpg') }}" width="50"
-                                height="50" alt="DocAlliance Films">
+                            <img src="{{ asset('images/ott/aQ1ritN00jXc7RAFfUoQKGAAfp7.jpg') }}"
+                                width="50" height="50" alt="DocAlliance Films">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="614" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="VI movies and tv">
-                            <img src="{{ asset('images/ott/h1PNHFp50cceDZ8jXUMnuVVMIw2.jpg') }}" width="50"
-                                height="50" alt="VI movies and tv">
+                            <img src="{{ asset('images/ott/h1PNHFp50cceDZ8jXUMnuVVMIw2.jpg') }}"
+                                width="50" height="50" alt="VI movies and tv">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="677" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Eventive">
-                            <img src="{{ asset('images/ott/fadQYOyKL0tqfyj012nYJxm3N2I.jpg') }}" width="50"
-                                height="50" alt="Eventive">
+                            <img src="{{ asset('images/ott/fadQYOyKL0tqfyj012nYJxm3N2I.jpg') }}"
+                                width="50" height="50" alt="Eventive">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="688" class="" data-role="tooltip">
-                        <a class="no_click" href="#" title="ShortsTV Amazon Channel">
-                            <img src="{{ asset('images/ott/m0mvKlSjn38S9w7WVNV7a7XyPIe.jpg') }}" width="50"
-                                height="50" alt="ShortsTV Amazon Channel">
+                        <a class="no_click" href="#"
+                            title="ShortsTV Amazon Channel">
+                            <img src="{{ asset('images/ott/m0mvKlSjn38S9w7WVNV7a7XyPIe.jpg') }}"
+                                width="50" height="50"
+                                alt="ShortsTV Amazon Channel">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="10" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Amazon Video">
-                            <img src="{{ asset('images/ott/5NyLm42TmCqCMOZFvH4fcoSNKEW.jpg') }}" width="50"
-                                height="50" alt="Amazon Video">
+                            <img src="{{ asset('images/ott/5NyLm42TmCqCMOZFvH4fcoSNKEW.jpg') }}"
+                                width="50" height="50" alt="Amazon Video">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="692" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Cultpix">
-                            <img src="{{ asset('images/ott/59azlQKUgFdYq6QI5QEAxIeecyL.jpg') }}" width="50"
-                                height="50" alt="Cultpix">
+                            <img src="{{ asset('images/ott/59azlQKUgFdYq6QI5QEAxIeecyL.jpg') }}"
+                                width="50" height="50" alt="Cultpix">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="701" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="FilmBox+">
-                            <img src="{{ asset('images/ott/4FqTBYsUSZgS9z9UGKgxSDBbtc8.jpg') }}" width="50"
-                                height="50" alt="FilmBox+">
+                            <img src="{{ asset('images/ott/4FqTBYsUSZgS9z9UGKgxSDBbtc8.jpg') }}"
+                                width="50" height="50" alt="FilmBox+">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="528" class="" data-role="tooltip">
-                        <a class="no_click" href="#" title="AMC+ Amazon Channel">
-                            <img src="{{ asset('images/ott/9edKQczyuMmQM1yS520hgmJbcaC.jpg') }}" width="50"
-                                height="50" alt="AMC+ Amazon Channel">
+                        <a class="no_click" href="#"
+                            title="AMC+ Amazon Channel">
+                            <img src="{{ asset('images/ott/9edKQczyuMmQM1yS520hgmJbcaC.jpg') }}"
+                                width="50" height="50"
+                                alt="AMC+ Amazon Channel">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="196" class="" data-role="tooltip">
-                        <a class="no_click" href="#" title="AcornTV Amazon Channel">
-                            <img src="{{ asset('images/ott/8WWD7t5Irwq9kAH4rufQ4Pe1Dog.jpg') }}" width="50"
-                                height="50" alt="AcornTV Amazon Channel">
+                        <a class="no_click" href="#"
+                            title="AcornTV Amazon Channel">
+                            <img src="{{ asset('images/ott/8WWD7t5Irwq9kAH4rufQ4Pe1Dog.jpg') }}"
+                                width="50" height="50"
+                                alt="AcornTV Amazon Channel">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="1771" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Takflix">
-                            <img src="{{ asset('images/ott/cnIHBy3uLWhHRR7VeWQhK3ZsYP0.jpg') }}" width="50"
-                                height="50" alt="Takflix">
+                            <img src="{{ asset('images/ott/cnIHBy3uLWhHRR7VeWQhK3ZsYP0.jpg') }}"
+                                width="50" height="50" alt="Takflix">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="445" class="" data-role="tooltip">
                         <a class="no_click" href="#" title="Classix">
-                            <img src="{{ asset('images/ott/iaMw6nOyxUzXSacrLQ0Au6CfZkc.jpg') }}" width="50"
-                                height="50" alt="Classix">
+                            <img src="{{ asset('images/ott/iaMw6nOyxUzXSacrLQ0Au6CfZkc.jpg') }}"
+                                width="50" height="50" alt="Classix">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
                     </li>
                     <li data-value="1854" class="" data-role="tooltip">
-                        <a class="no_click" href="#" title="AMC Plus Apple TV Channel ">
-                            <img src="{{ asset('images/ott/yFgm7vxwKZ4jfXIlPizlgoba2yi.jpg') }}" width="50"
-                                height="50" alt="AMC Plus Apple TV Channel ">
+                        <a class="no_click" href="#"
+                            title="AMC Plus Apple TV Channel ">
+                            <img src="{{ asset('images/ott/yFgm7vxwKZ4jfXIlPizlgoba2yi.jpg') }}"
+                                width="50" height="50"
+                                alt="AMC Plus Apple TV Channel ">
                             <div><span class="glyphicons_v2 check white"></span>
                             </div>
                         </a>
