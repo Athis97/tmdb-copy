@@ -7,7 +7,6 @@
                     src="https://image.tmdb.org/t/p/w220_and_h330_face{{ $movie['poster_path'] }}"
                     srcset="https://image.tmdb.org/t/p/w220_and_h330_face{{ $movie['poster_path'] }} 1x, https://image.tmdb.org/t/p/w440_and_h660_face{{ $movie['poster_path'] }} 2x"
                     alt="">
-
             </a>
         </div>
         <div class="absolute opacity-[0.6] options right-[8px] top-[8px] z-[4]" data-id="{{ $movie['id'] }}"
@@ -36,9 +35,9 @@
         </div>
 
         <h2 class="font-semibold m-0 text-[1em] w-full"><a href="/movie/{{ $movie['id'] }}"
-                title="Puss in Boots: The Last Wish" class="font-bold text-black">{{ $movie['original_title'] }}</a>
+                title="Puss in Boots: The Last Wish" class="font-bold text-black">{{ $movie['name'] }}</a>
         </h2>
-        <p class="m-0 p-0 text-[#0009] text-[1em]">{{ date_format(date_create($movie['release_date']), "M d,Y") ?? '' }}</p>
+        <p class="m-0 p-0 text-[#0009] text-[1em]">{{ date_format(date_create($movie['first_air_date']), "M d,Y") ?? '' }}</p>
     </div>
 
     <div class="hover {{ $movie['id'] }}"></div>

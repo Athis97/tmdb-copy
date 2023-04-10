@@ -2,7 +2,11 @@
 
 <div id="page_{{ $movies['page'] }}" class="page_wrapper flex justify-between flex-wrap">
     @foreach ($movies['results'] as $movie)
-        <x-movie-card :movie="$movie"></x-movie-card>
+        @if ($type == 'movie')
+            <x-movie-card :movie="$movie"></x-movie-card>
+        @elseif ($type == 'tv')
+            <x-tv-card :movie="$movie"></x-tv-card>
+        @endif
     @endforeach
 
     @if ($movies['total_pages'] > $movies['page'])

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
 
-class MovieController extends Controller
+class TvController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,56 +15,56 @@ class MovieController extends Controller
      */
     public function indexPopular()
     {
-        return view('listview.index', ['movies' => $this->movies('popular'), 'page_heading' => 'Popular Movies', 'type' => 'movie']);
+        return view('listview.index', ['movies' => $this->tv('popular'), 'page_heading' => 'Popular TV Shows', 'type' => 'tv']);
     }
 
     public function paginationPopular(Request $request)
     {
         if ($page = $request->data_next_page) {
-            return view('components.list-page-wrapper', ['movies' => $this->movies('popular', $page), 'type' => 'movie']);
+            return view('components.list-page-wrapper', ['movies' => $this->tv('popular', $page), 'type' => 'tv']);
         }
     }
 
-    public function indexNowPlaying()
+    public function indexAiringToday()
     {
-        return view('listview.index', ['movies' => $this->movies('now_playing'), 'page_heading' => 'Now Playing Movies', 'type' => 'movie']);
+        return view('listview.index', ['movies' => $this->tv('airing_today'), 'page_heading' => 'TV Shows Airing Today', 'type' => 'tv']);
     }
 
-    public function paginationNowPlaying(Request $request)
+    public function paginationAiringToday(Request $request)
     {
         if ($page = $request->data_next_page) {
-            return view('components.list-page-wrapper', ['movies' => $this->movies('now_playing', $page), 'type' => 'movie']);
+            return view('components.list-page-wrapper', ['movies' => $this->tv('airing_today', $page), 'type' => 'tv']);
         }
     }
 
-    public function indexUpcoming()
+    public function indexOnTheAir()
     {
-        return view('listview.index', ['movies' => $this->movies('upcoming'), 'page_heading' => 'Upcoming Movies', 'type' => 'movie']);
+        return view('listview.index', ['movies' => $this->tv('on_the_air'), 'page_heading' => 'Currently Airing TV Shows', 'type' => 'tv']);
     }
 
-    public function paginationUpcoming(Request $request)
+    public function paginationOnTheAir(Request $request)
     {
         if ($page = $request->data_next_page) {
-            return view('components.list-page-wrapper', ['movies' => $this->movies('upcoming', $page), 'type' => 'movie']);
+            return view('components.list-page-wrapper', ['movies' => $this->tv('on_the_air', $page), 'type' => 'tv']);
         }
     }
 
     public function indexTopRated()
     {
-        return view('listview.index', ['movies' => $this->movies('top_rated'), 'page_heading' => 'Top Rated Movies', 'type' => 'movie']);
+        return view('listview.index', ['movies' => $this->tv('top_rated'), 'page_heading' => 'Top Rated TV Shows', 'type' => 'tv']);
     }
 
     public function paginationTopRated(Request $request)
     {
         if ($page = $request->data_next_page) {
-            return view('components.list-page-wrapper', ['movies' => $this->movies('top_rated', $page), 'type' => 'movie']);
+            return view('components.list-page-wrapper', ['movies' => $this->tv('top_rated', $page), 'type' => 'tv']);
         }
     }
 
-    public function movies($list_type, $page = 1)
+    public function tv($list_type, $page = 1)
     {
-        return Cache::remember($list_type . '-movies_' . $page, now()->addSeconds(2), function () use ($list_type, $page) {
-            return Http::get('https://api.themoviedb.org/3/movie/' . $list_type . '?api_key=' . env('TMDB_API_KEY') . '&language=en-US' . ($page > 1 ? '&page=' . $page : ''));
+        return Cache::remember($list_type . '-tv_' . $page, now()->addSeconds(2), function () use ($list_type, $page) {
+            return Http::get('https://api.themoviedb.org/3/tv/' . $list_type . '?api_key=' . env('TMDB_API_KEY') . '&language=en-US' . ($page > 1 ? '&page=' . $page : ''));
         });
     }
 
