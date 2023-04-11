@@ -1,20 +1,21 @@
 <x-front-layout>
     <x-slot name="page_heading">{{ $page_heading }}</x-slot>
     <main id="main"
-        class="smaller  subtle show_search_false w-full flex flex-wrap content-start justify-center bg-white mt-[64px]">
+        class="smaller  subtle show_search_false w-full flex flex-wrap content-start justify-center bg-white">
         <section
             class="inner_content movie_content backdrop poster flex flex-wrap justify-center items-center content-start w-full bg-[50%_50%] bg-no-repeat bg-cover">
             <div id="shortcut_bar_scroller"
                 class="scroller_wrap shortcut_bar_wrapper is_fading w-full h-[46px] flex justify-center bg-white relative top-0 left-0">
                 <ul id="new_shortcut_bar"
-                    class="dropdown_menu scroller k-widget k-reset k-header k-menu k-menu-horizontal" data-role="menu"
-                    tabindex="0" role="menubar">
-                    <li class="true k-item k-menu-item k-state-default k-first" aria-haspopup="true" role="menuitem">
+                    class="dropdown_menu scroller k-widget k-reset k-header k-menu k-menu-horizontal k-context-menu !text-black"
+                    data-role="menu" tabindex="0" role="menubar">
+                    <li class="true k-item k-menu-item k-state-default k-first group" aria-haspopup="true"
+                        role="menuitem">
                         <span class="k-link k-menu-link">
                             Overview
-
                             <span class="k-menu-expand-arrow k-icon k-i-arrow-60-down"></span></span>
-                        <ul class="media group k-group k-menu-group" role="menu" aria-hidden="true">
+                        <ul class="media group k-group k-menu-group hidden group-hover:block" role="menu"
+                            aria-hidden="true">
                             <li class="k-item k-menu-item k-state-default k-first" role="menuitem"><a
                                     href="/movie/677179-creed-iii" class="k-link k-menu-link">Main</a></li>
                             <li class="k-item k-menu-item k-state-default" role="menuitem"><a
@@ -37,12 +38,13 @@
 
                         </ul>
                     </li>
-                    <li class="false k-item k-menu-item k-state-default" aria-haspopup="true" role="menuitem">
+                    <li class="false k-item k-menu-item k-state-default group" aria-haspopup="true" role="menuitem">
                         <span class="k-link k-menu-link">
                             Media
 
                             <span class="k-menu-expand-arrow k-icon k-i-arrow-60-down"></span></span>
-                        <ul class="media number_group k-group k-menu-group" role="menu" aria-hidden="true">
+                        <ul class="media number_group k-group k-menu-group hidden group-hover:block" role="menu"
+                            aria-hidden="true">
                             <li class="k-item k-menu-item k-state-default k-first" role="menuitem"><a
                                     href="/movie/677179-creed-iii/images/backdrops" class="k-link k-menu-link">Backdrops
                                     <span class="count">33</span></a></li>
@@ -52,12 +54,14 @@
                             <li class="k-item k-menu-item k-state-default" role="menuitem"><a
                                     href="/movie/677179-creed-iii/images/posters" class="k-link k-menu-link">Posters
                                     <span class="count">133</span></a></li>
-                            <li aria-haspopup="true" class="k-item k-menu-item k-state-default k-last" role="menuitem">
+                            <li aria-haspopup="true" class="k-item k-menu-item k-state-default k-last group"
+                                role="menuitem">
                                 <span class="k-link k-menu-link">
                                     Videos
 
                                     <span class="k-menu-expand-arrow k-icon k-i-arrow-60-right"></span></span>
-                                <ul class="number_group k-group k-menu-group" role="menu" aria-hidden="true">
+                                <ul class="number_group k-group k-menu-group hidden group-hover:block" role="menu"
+                                    aria-hidden="true">
                                     <li class="k-item k-menu-item k-state-default k-first" role="menuitem"><a
                                             href="/movie/677179-creed-iii/videos?active_nav_item=Trailers"
                                             class="k-link k-menu-link">Trailers <span class="count">2</span></a>
@@ -78,18 +82,20 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="false k-item k-menu-item k-state-default" aria-haspopup="true" role="menuitem">
+                    <li class="false k-item k-menu-item k-state-default group" aria-haspopup="true" role="menuitem">
                         <span class="k-link k-menu-link">
                             Fandom
 
                             <span class="k-menu-expand-arrow k-icon k-i-arrow-60-down"></span></span>
-                        <ul class="media k-group k-menu-group" role="menu" aria-hidden="true">
-                            <li aria-haspopup="true" class="k-item k-menu-item k-state-default k-first"
+                        <ul class="media k-group k-menu-group hidden group-hover:block" role="menu"
+                            aria-hidden="true">
+                            <li aria-haspopup="true" class="k-item k-menu-item k-state-default k-first group"
                                 role="menuitem"><span class="k-link k-menu-link">
                                     Discussions
 
                                     <span class="k-menu-expand-arrow k-icon k-i-arrow-60-right"></span></span>
-                                <ul class="number_group k-group k-menu-group" role="menu" aria-hidden="true">
+                                <ul class="number_group k-group k-menu-group hidden group-hover:block" role="menu"
+                                    aria-hidden="true">
                                     <li class="k-item k-menu-item k-state-default k-first" role="menuitem"><a
                                             href="/movie/677179-creed-iii/discuss"
                                             class="k-link k-menu-link">Overview</a></li>
@@ -108,12 +114,13 @@
                             </li>
                         </ul>
                     </li>
-                    <li aria-haspopup="true" class="k-item k-menu-item k-state-default k-last" role="menuitem">
+                    <li aria-haspopup="true" class="k-item k-menu-item k-state-default k-last group" role="menuitem">
                         <span class="k-link k-menu-link">
                             Share
 
                             <span class="k-menu-expand-arrow k-icon k-i-arrow-60-down"></span></span>
-                        <ul class="media k-group k-menu-group" role="menu" aria-hidden="true">
+                        <ul class="media k-group k-menu-group hidden group-hover:block" role="menu"
+                            aria-hidden="true">
                             <li class="k-item k-menu-item k-state-default k-first" role="menuitem"><a id="share"
                                     class="no_click k-link k-menu-link" href="#" title="Share">Share Link</a>
                             </li>
@@ -131,7 +138,6 @@
             <script>
                 $(function() {
                     initializeScroller(false, '#shortcut_bar_scroller');
-
                     $("#new_shortcut_bar").kendoMenu({
                         hoverDelay: 0,
                         activate: function(e) {}
