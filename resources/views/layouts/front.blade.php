@@ -25,6 +25,7 @@
         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/default-main.css') }}">
     <link rel="stylesheet" href="{{ asset('css/front.css') }}">
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -48,6 +49,7 @@
     <script src="{{ asset('js/easypiechart.min.js') }}"></script>
     <script src="{{ asset('js/jquery.easypiechart.min.js') }}"></script>
     <script src="{{ asset('js/jquery.simplePagination.js') }}"></script>
+    <script src="{{ asset('js/kendo.all.min.js') }}"></script>
     <script src="{{ asset('js/front.js') }}"></script>
 </body>
 

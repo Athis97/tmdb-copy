@@ -1,9 +1,11 @@
 <x-front-layout>
     <x-slot name="page_heading">{{ $page_heading }}</x-slot>
-    <main id="main" class="smaller  subtle show_search_false">
-        <section class="inner_content movie_content backdrop poster">
-
-            <div id="shortcut_bar_scroller" class="scroller_wrap shortcut_bar_wrapper is_fading">
+    <main id="main"
+        class="smaller  subtle show_search_false w-full flex flex-wrap content-start justify-center bg-white mt-[64px]">
+        <section
+            class="inner_content movie_content backdrop poster flex flex-wrap justify-center items-center content-start w-full bg-[50%_50%] bg-no-repeat bg-cover">
+            <div id="shortcut_bar_scroller"
+                class="scroller_wrap shortcut_bar_wrapper is_fading w-full h-[46px] flex justify-center bg-white relative top-0 left-0">
                 <ul id="new_shortcut_bar"
                     class="dropdown_menu scroller k-widget k-reset k-header k-menu k-menu-horizontal" data-role="menu"
                     tabindex="0" role="menubar">
