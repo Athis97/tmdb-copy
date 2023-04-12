@@ -7,7 +7,7 @@
             <div id="shortcut_bar_scroller"
                 class="scroller_wrap shortcut_bar_wrapper is_fading w-full h-[46px] flex justify-center bg-white relative top-0 left-0">
                 <ul id="new_shortcut_bar"
-                    class="dropdown_menu scroller k-widget k-reset k-header k-menu k-menu-horizontal k-context-menu !text-black"
+                    class="dropdown_menu scroller k-widget k-reset k-header k-menu k-menu-horizontal k-context-menu !text-black border-0 text-[16px]"
                     data-role="menu" tabindex="0" role="menubar">
                     <li class="true k-item k-menu-item k-state-default k-first group" aria-haspopup="true"
                         role="menuitem">
@@ -146,26 +146,30 @@
             </script>
 
 
-            <div class="header large border first">
-                <div class="keyboard_s custom_bg">
-
-                    <div class="single_column">
-                        <section id="original_header" class="images inner">
-                            <div class="poster_wrapper false">
-                                <div class="poster">
-                                    <div class="image_content backdrop">
+            <div
+                class="header large border first bg-[url('https://image.tmdb.org/t/p/w1920_and_h800_multi_faces{{ $details['poster_path'] }}')] border-b-1 border-[#20205f] bg-cover bg-no-repeat bg-[left calc((50vw - 170px) - 340px) top]">
+                <div
+                    class="keyboard_s custom_bg bg-[linear-gradient(to_right,rgba(31.5,31.5,94.5,1)_calc((50vw-170px)-340px),rgba(31.5,31.5,94.5,0.84)_50%,rgba(31.5,31.5,94.5,0.84)_100%)] flex justify-center flex-wrap">
+                    <div class="single_column px-[40px] py-[30px] w-full max-w-[1400px]">
+                        <section id="original_header" class="images inner text-white flex flex-nowrap">
+                            <div
+                                class="poster_wrapper false border-0 round-[8px] w-[300px] min-w-[300px] h-[450px] overflow-hidden">
+                                <div class="poster w-[300px] min-w-[300px] h-[450px] realtive top-0 left-0">
+                                    <div class="image_content backdrop w-full h-full">
                                         <img class="poster lazyload lazyloaded"
-                                            src="/t/p/w300_and_h450_bestv2/vJU3rXSP9hwUuLeq8IpfsJShLOk.jpg"
-                                            data-src="/t/p/w300_and_h450_bestv2/vJU3rXSP9hwUuLeq8IpfsJShLOk.jpg"
-                                            data-srcset="/t/p/w300_and_h450_bestv2/vJU3rXSP9hwUuLeq8IpfsJShLOk.jpg 1x, /t/p/w600_and_h900_bestv2/vJU3rXSP9hwUuLeq8IpfsJShLOk.jpg 2x"
+                                            src="https://image.tmdb.org/t/p/w300_and_h450_bestv2{{ $details['poster_path'] }}"
+                                            data-src="https://image.tmdb.org/t/p/w300_and_h450_bestv2{{ $details['poster_path'] }}"
+                                            data-srcset="https://image.tmdb.org/t/p/w300_and_h450_bestv2{{ $details['poster_path'] }} 1x, https://image.tmdb.org/t/p/w600_and_h900_bestv2{{ $details['poster_path'] }} 2x"
                                             alt="Creed III"
-                                            srcset="/t/p/w300_and_h450_bestv2/vJU3rXSP9hwUuLeq8IpfsJShLOk.jpg 1x, /t/p/w600_and_h900_bestv2/vJU3rXSP9hwUuLeq8IpfsJShLOk.jpg 2x"
+                                            srcset="https://image.tmdb.org/t/p/w300_and_h450_bestv2{{ $details['poster_path'] }} 1x, https://image.tmdb.org/t/p/w600_and_h900_bestv2{{ $details['poster_path'] }} 2x"
                                             data-loaded="true">
 
                                     </div>
-                                    <div class="zoom">
-                                        <a href="#" class="no_click"><span
-                                                class="glyphicons_v2 fullscreen white"></span> Expand</a>
+                                    <div
+                                        class="zoom absolute w-full h-full text-center bg-[#000000b3] top-0 left-0 round-[8px] invisible backdrop-blur-[20px] duration-[0.2] ease-linear">
+                                        <a href="#"
+                                            class="no_click inline-flex justify-center items-center text-[1.3em] w-full h-full">
+                                            <span class="glyphicons_v2 fullscreen white"></span> Expand</a>
                                     </div>
                                 </div>
 
@@ -1137,8 +1141,8 @@
 
                                             <div class="poster">
                                                 <img class="poster"
-                                                    src="/t/p/w220_and_h330_face/vJU3rXSP9hwUuLeq8IpfsJShLOk.jpg"
-                                                    srcset="/t/p/w220_and_h330_face/vJU3rXSP9hwUuLeq8IpfsJShLOk.jpg 1x, /t/p/w440_and_h660_face/vJU3rXSP9hwUuLeq8IpfsJShLOk.jpg 2x"
+                                                    src="/t/p/w220_and_h330_face{{ $details['poster_path'] }}"
+                                                    srcset="/t/p/w220_and_h330_face{{ $details['poster_path'] }} 1x, /t/p/w440_and_h660_face{{ $details['poster_path'] }} 2x"
                                                     alt="Creed III">
 
                                             </div>

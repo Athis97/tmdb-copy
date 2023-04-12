@@ -26,6 +26,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/default-main.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/normalize.css') }}">
     <link rel="stylesheet" href="{{ asset('css/front.css') }}">
 
     <script src="https://cdn.tailwindcss.com"></script>

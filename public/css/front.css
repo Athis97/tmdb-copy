@@ -473,3 +473,32 @@ header div.sub_media {
 .pagination_wrapper .pagination ul > li > span.current.next {
     display: none;
 }
+
+ul#new_shortcut_bar > .true.k-item {
+    border-bottom: 4px solid rgba(1, 180, 228, 1);
+}
+
+ul#new_shortcut_bar .k-menu-group {
+    top: 40px;
+    padding: 8px 0;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+}
+
+.k-menu-group .k-menu-link {
+    padding: 3px 1.5rem;
+    padding-right: calc(3rem + 16px);
+}
+
+div.shortcut_bar_wrapper ul.k-menu-group.group li.spacer {
+    margin-top: 14px;
+}
+
+.k-menu.k-context-menu .k-item > .k-link:active {
+    background-color: rgba(1, 180, 228, 1);
+}
+
+ul#new_shortcut_bar .k-menu-group li > ul.k-menu-group {
+    top: 0;
+    left: 103%;
+}
