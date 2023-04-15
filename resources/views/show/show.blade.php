@@ -153,8 +153,8 @@
                     <div class="single_column px-[40px] py-[30px] w-full max-w-[1400px]">
                         <section id="original_header" class="images inner text-white flex flex-nowrap">
                             <div
-                                class="poster_wrapper false border-0 round-[8px] w-[300px] min-w-[300px] h-[450px] overflow-hidden">
-                                <div class="poster w-[300px] min-w-[300px] h-[450px] realtive top-0 left-0">
+                                class="poster_wrapper false border-0 rounded-[8px] w-[300px] min-w-[300px] h-[450px] overflow-hidden ">
+                                <div class="poster w-[300px] min-w-[300px] h-[450px] relative top-0 left-0 group">
                                     <div class="image_content backdrop w-full h-full">
                                         <img class="poster lazyload lazyloaded"
                                             src="https://image.tmdb.org/t/p/w300_and_h450_bestv2{{ $details['poster_path'] }}"
@@ -166,38 +166,39 @@
 
                                     </div>
                                     <div
-                                        class="zoom absolute w-full h-full text-center bg-[#000000b3] top-0 left-0 round-[8px] invisible backdrop-blur-[20px] duration-[0.2] ease-linear">
+                                        class="zoom absolute w-full h-full text-center bg-[#000000b3] top-0 left-0 rounded-[8px] invisible backdrop-blur-[20px] duration-[0.2] ease-linear group-hover:visible">
                                         <a href="#"
                                             class="no_click inline-flex justify-center items-center text-[1.3em] w-full h-full">
-                                            <span class="glyphicons_v2 fullscreen white"></span> Expand</a>
+                                            <span
+                                                class="glyphicons_v2 fullscreen white bg-[url('{{ asset('images/glyphicons-basic-216-fullscreen-white.svg') }}')] w-[1em] h-[1em] inline-flex justify-center items-center bg-center mr-[6px]"></span>
+                                            Expand</a>
                                     </div>
                                 </div>
 
 
                             </div>
 
-                            <div class="header_poster_wrapper false">
-                                <section class="header poster">
-                                    <div class="title ott_false" dir="auto">
-
-                                        <h2 class="9">
-                                            <a href="/movie/677179-creed-iii">Creed III</a>
-                                            <span class="tag release_date">(2023)</span>
+                            <div class="header_poster_wrapper false flex">
+                                <section class="header poster flex flex-wrap items-start content-center pl-[40px]">
+                                    <div class="title ott_false w-full mb-[24px] flex flex-wrap" dir="auto">
+                                        <h2 class="text-[2.2rem] font-semibold w-full m-0 p-0">
+                                            <a href="/movie/677179-creed-iii"
+                                                class="font-bold">{{ $details['title'] }}</a>
+                                            <span
+                                                class="tag release_date font-normal opacity-[0.8]">({{ explode('-', $details['release_date'])[0] }})</span>
                                         </h2>
-
-                                        <div class="facts">
-
-
-                                            <span class="certification">
-                                                PG-13
+                                        <div class="facts flex">
+                                            <span
+                                                class="certification border-[1px] border-[rgba(255,255,255,0.6)] rounded-[2px] opacity-[0.6] items-center content-center p-[0.06em_4px_0.15em_4px] mr-[7px]">
+                                                PG
                                             </span>
-
-                                            <span class="release">
+                                            <span class="release relative top-0 left-0">
                                                 03/03/2023 (US)
                                             </span>
 
 
-                                            <span class="genres">
+                                            <span
+                                                class="genres before:leading-none before:w-full before:h-full before:absolute before:top-0 before:inline-flex before:content-center before:items-center before:content-['\2022'] before:left-[7px] before:text-[1.1em] relative top-0 left-0 pl-[20px]">
                                                 <a href="/genre/18-drama/movie">Drama</a>,&nbsp;<a
                                                     href="/genre/28-action/movie">Action</a>
                                             </span>

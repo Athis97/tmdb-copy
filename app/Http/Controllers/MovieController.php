@@ -95,6 +95,7 @@ class MovieController extends Controller
             return redirect('/movie/' . $slug . '-' . Str::slug($movie['original_title']));
         }
 
+        // return $movie;
         return view('show.show', ['details' => $movie, 'page_heading' => $movie['original_title'] . ' (' . explode('-', $movie['release_date'])[0] . ')']);
     }
 
